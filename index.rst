@@ -11,3 +11,9 @@ Welcome to the OpenEnergyMonitor guide!
    :caption: EmonTx v4:
    
    emontx4/readme
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: EmonPi:
+   
+   emonpi/docs/index.md
