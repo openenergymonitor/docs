@@ -10,7 +10,10 @@ Welcome to the OpenEnergyMonitor guide!
    :maxdepth: 2
    :caption: EmonTx v4:
    
-   emontx4/readme
+   emontx4/docs/overview.md
+   Install Guide <emontx4/docs/emontx4_emonbase_install.md>
+   emontx4/docs/configuration.md
+   emontx4/docs/firmware.md
    
 .. toctree::
    :maxdepth: 2
