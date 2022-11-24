@@ -1,0 +1,3 @@
+[submodule "emontx4"]
+	path = emontx4
+	url = https://github.com/openenergymonitor/emontx4/
