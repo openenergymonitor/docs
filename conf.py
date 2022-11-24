@@ -18,7 +18,7 @@ extensions = ["myst_parser"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
+include_patterns = ['index.rst','emontx4/docs/*','emonpi/docs/*']
 
 
 # -- Options for HTML output -------------------------------------------------

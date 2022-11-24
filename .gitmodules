@@ -5,3 +5,4 @@
 [submodule "emonpi"]
 	path = emonpi
 	url = https://github.com/openenergymonitor/emonpi.git
+	branch = master
