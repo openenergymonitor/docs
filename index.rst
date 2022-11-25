@@ -15,6 +15,8 @@ Welcome to the OpenEnergyMonitor guide!
    Adding to an existing install <emontx4/docs/emontx4_emonpi_install.md>
    emontx4/docs/configuration.md
    emontx4/docs/firmware.md
+   emontx4/docs/hardware.md
+   emontx4/docs/voltage_sensors.md
    emontx4/docs/expansion_boards.md
    
 .. toctree::
