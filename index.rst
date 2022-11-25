@@ -14,6 +14,7 @@ Welcome to the OpenEnergyMonitor guide!
    Install Guide <emontx4/docs/emontx4_emonbase_install.md>
    emontx4/docs/configuration.md
    emontx4/docs/firmware.md
+   emontx4/docs/expansion_boards.md
    
 .. toctree::
    :maxdepth: 2
