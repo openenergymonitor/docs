@@ -12,6 +12,7 @@ Welcome to the OpenEnergyMonitor guide!
    
    emontx4/docs/overview.md
    Install Guide <emontx4/docs/emontx4_emonbase_install.md>
+   Adding to an existing install <emontx4/docs/emontx4_emonpi_install.md>
    emontx4/docs/configuration.md
    emontx4/docs/firmware.md
    emontx4/docs/expansion_boards.md
