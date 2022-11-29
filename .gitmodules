@@ -1,8 +1,0 @@
-[submodule "emontx4"]
-	path = emontx4
-	url = https://github.com/openenergymonitor/emontx4.git
-	branch = main
-[submodule "emonpi"]
-	path = emonpi
-	url = https://github.com/openenergymonitor/emonpi.git
-	branch = master

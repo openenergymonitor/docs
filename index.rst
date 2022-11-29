@@ -7,20 +7,30 @@ Welcome to the OpenEnergyMonitor guide!
 =======================================
 
 .. toctree::
+   System Overview <overview.md>
+
+.. toctree::
    :maxdepth: 2
-   :caption: EmonTx v4:
+   :caption: Hardware:
    
-   emontx4/docs/overview.md
-   Install Guide <emontx4/docs/emontx4_emonbase_install.md>
-   Adding to an existing install <emontx4/docs/emontx4_emonpi_install.md>
-   emontx4/docs/configuration.md
-   emontx4/docs/firmware.md
-   emontx4/docs/hardware.md
-   emontx4/docs/voltage_sensors.md
-   emontx4/docs/expansion_boards.md
+   emonTx4 <emontx4/index>
+   emonTx3 <emontx3/index>
+   emonPi <emonpi/index>
+   emonBase <emonbase/index> 
+   EmonEVSE <emonevse/index>
    
 .. toctree::
    :maxdepth: 2
-   :caption: EmonPi:
+   :caption: Software:
    
-   emonpi/docs/index.md
+   emonSD <emonsd/index>
+   emonHub <emonhub/index>
+   emonCMS <emoncms/index>
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Learn:
+
+   Electricity Monitoring <electricity-monitoring/index>
+   Sustainable Energy <sustainable-energy/introduction.md>
+   PV Diversion <pv-diversion/index>
