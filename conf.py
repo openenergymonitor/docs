@@ -30,3 +30,4 @@ html_static_path = ['_static']
 html_theme_options = {
   'navigation_depth': 3
 }
+myst_heading_anchors = 2
