@@ -7,8 +7,11 @@ Welcome to the OpenEnergyMonitor guide!
 =======================================
 
 .. toctree::
+   :maxdepth: 1
+   
    System Overview <overview.md>
-
+   Resources <resources.md>
+   
 .. toctree::
    :maxdepth: 2
    :caption: Hardware:
