@@ -15,6 +15,7 @@ release = '0.0.1'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = ["myst_parser"]
+myst_enable_extensions = ["html_image"]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
@@ -30,4 +31,4 @@ html_static_path = ['_static']
 html_theme_options = {
   'navigation_depth': 3
 }
-myst_heading_anchors = 2
+myst_heading_anchors = 3

@@ -29,6 +29,14 @@ Welcome to the OpenEnergyMonitor guide!
    
 .. toctree::
    :maxdepth: 2
+   :caption: Applications:
+
+   Home Energy <applications/home-energy.md>
+   Solar PV <applications/solar-pv.md>
+   Heat pump <applications/heatpump.md>
+   
+.. toctree::
+   :maxdepth: 2
    :caption: Learn:
 
    Electricity Monitoring <electricity-monitoring/index>
