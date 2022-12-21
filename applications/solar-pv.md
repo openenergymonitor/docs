@@ -21,9 +21,9 @@ Emoncms and My Solar are pre-installed on the emonPi and can run locally and or 
 
 ## 1. Required Hardware
 
-[emonPi Solar PV Bundle](https://shop.openenergymonitor.com/emonpi-solar-pv-bundle/)
+[emonTx V4](https://shop.openenergymonitor.com/emonpi-solar-pv-bundle/)
 
-<!--<p><a class="btn pull-right" href="http://shop.openenergymonitor.com/emonpi-solar-pv-bundle/">View in Shop →</a></p>-->
+<!--<p><a class="btn pull-right" href="[https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4/](https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4/)">View in Shop →</a></p>-->
 
 The Emoncms setup instructions below are applicable to both the emonPi and the emonTx.
 
@@ -31,7 +31,7 @@ The Emoncms setup instructions below are applicable to both the emonPi and the e
 
 ![](img/solar-pv/solar-pv-install.webp)
 
-It is important that an  AC-AC adapter (included as default in the [emonPi solar PV bundle](https://shop.openenergymonitor.com/emonpi-solar-pv-bundle/)) is used for solar PV monitoring. 
+It is important that an  AC-AC adapter or emonVS voltage sensor is used for solar PV monitoring. 
 
 **All sensors should be connected to the emonPi before powering up**
 
