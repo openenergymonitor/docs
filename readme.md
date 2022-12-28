@@ -31,5 +31,6 @@ See: [http://www.sphinx-doc.org/en/master/usage/installation.html](http://www.sp
 
 This will generate html output in a `build` folder. The html can then be displayed using a local web server.
 
+## Update
 
-
+    git submodule update --recursive --remote
