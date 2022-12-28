@@ -22,3 +22,4 @@
 [submodule "learn"]
 	path = learn
 	url = https://github.com/openenergymonitor/learn
+        branch = readthedocs
