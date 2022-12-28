@@ -1,0 +1,24 @@
+[submodule "emontx4"]
+	path = emontx4
+	url = https://github.com/openenergymonitor/emontx4
+[submodule "emontx3"]
+	path = emontx3
+	url = https://github.com/openenergymonitor/emontx3
+[submodule "emonpi"]
+	path = emonpi
+	url = https://github.com/openenergymonitor/emonpi
+[submodule "EmonScripts"]
+	path = EmonScripts
+	url = https://github.com/openenergymonitor/EmonScripts
+[submodule "emonhub"]
+	path = emonhub
+	url = https://github.com/openenergymonitor/emonhub
+[submodule "emoncms"]
+	path = emoncms
+	url = https://github.com/emoncms/emoncms
+[submodule "emonbase"]
+	path = emonbase
+	url = https://github.com/openenergymonitor/emonbase
+[submodule "learn"]
+	path = learn
+	url = https://github.com/openenergymonitor/learn
