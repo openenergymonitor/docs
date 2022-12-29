@@ -6,7 +6,7 @@ The docs can be built and previewed locally:
 
 ### 1. Clone repo and sub-modules 
 
-    git clone https://github.com/openenergymonitor/guide-rtd
+    git clone https://github.com/openenergymonitor/docs
     git submodule update --init
 
 ### 2. Install Sphinx
