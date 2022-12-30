@@ -1,0 +1,2 @@
+cd main
+make html
