@@ -18,6 +18,7 @@ Welcome to the OpenEnergyMonitor guide!
    
    emonTx4 <emontx4/index>
    emonTx3 <emontx3/index>
+   emonTH2 <emonth2/index>
    emonPi <emonpi/index>
    emonBase <emonbase/index> 
    EmonEVSE <emonevse/index>
