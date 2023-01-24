@@ -24,7 +24,7 @@
 [submodule "learn"]
 	path = learn
 	url = https://github.com/openenergymonitor/learn
-        branch = readthedocs
+        branch = master
 [submodule "emonth2"]
 	path = emonth2
 	url = https://github.com/openenergymonitor/emonth2
