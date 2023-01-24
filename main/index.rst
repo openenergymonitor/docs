@@ -11,6 +11,7 @@ Welcome to the OpenEnergyMonitor guide!
    
    System Overview <overview.md>
    Resources <resources.md>
+   Troubleshooting <troubleshooting.md>
    
 .. toctree::
    :maxdepth: 2
