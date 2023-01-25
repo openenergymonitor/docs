@@ -8,20 +8,6 @@
 OpenEVSE and EmonEVSE share the same software platform, both these units are configured and setup in the same way, "OpenEVSE" and "EmonEVSE" will be used interchangeably in this guide.
 ```
 
-- [Web Interface Setup](#web-interface-setup)
-  * [WiFi Setup](#wifi-setup)
-  * [Services Setup](#services-setup)
-    + [Emoncms Server Setup](#emoncms-server-setup)
-    + [MQTT Setup](#mqtt-setup)
-    + [Developer API](#developer-api)
-  * [Eco Mode: Solar PV Divert](#eco-mode-solar-pv-divert)
-    + [Solar PV Divert Setup](#solar-pv-divert-setup)
-    + [Advanced Solar PV Divert Setup](#advanced-solar-pv-divert-setup)
-    + [Solar PV Divert Operation](#solar-pv-divert-operation)
-- [Emoncms Setup](#emoncms-setup)
-  * [Input Processing](#input-processing)
-  * [Emoncms ‘Apps’ Dashboard](#emoncms-apps-dashboard)
-
 ## Web Interface Setup
 
 All functions of the EVSE can be controlled via the web interface, see [https://openevse.openenergymonitor.org](https://openevse.openenergymonitor.org) for a live demo. This interface is optimised to work well on a mobile device. 
@@ -60,7 +46,7 @@ OpenEVSE can post data directly to an Emoncms server via HTTP(S), enter the foll
 
 #### MQTT Setup
 
-The OpenEVSE supports [MQTT connection](/technical/mqtt). 
+The OpenEVSE supports [MQTT connection](../emoncms/mqtt.md). 
 
 MQTT can used to communicate with an emonPi for Solar PV Divert (EcoMode) feature.
 
@@ -74,7 +60,7 @@ For Solar PV Divert (EcoMode) to work emonPi and OpenEVSE need be on the same lo
 - Enter emonPi local network
 - To connect to an emonPi MQTT server on local network use pre-populated username and password
 - Base-topic is the base topic used by the OpenEVSE to publish data. If posting data to local emonPi via MQTT is required change base-topic to `emon/openevse`. EVSE data should will now appaar in local emonPi Emoncms Inputs
-- If Solar PV Divert feature is required see [Solar PV Divert](#solar-pv-divert) section below for more info
+- If Solar PV Divert feature is required see Solar PV Divert section below for more info
 
 <figure>
 
@@ -88,7 +74,7 @@ For Solar PV Divert (EcoMode) to work emonPi and OpenEVSE need be on the same lo
 
 Eco Mode feature allows the OpenEVSE to adjust the charge rate based on the amount of available solar PV production or excess power (grid export).
 
-An [OpenEnergyMonitor solar PV energy monitor](/applications/solar-pv/) with an AC-AC voltage sensor adaptor is required to monitor solar PV generation and grid excess.
+An [OpenEnergyMonitor solar PV energy monitor](../applications/solar-pv.md) with an AC-AC voltage sensor adaptor is required to monitor solar PV generation and grid excess.
 
 When Eco Mode is enabled the EVSE will begin charging when Solar PV Generation or Grid Excess > 1.4kW (6A the minimum EV charge rate). Charging will pause if Generation or Excess drops below this threshold for a period of time. 
 
@@ -115,11 +101,11 @@ When Eco Mode is enabled the EVSE will begin charging when Solar PV Generation o
 
 #### Solar PV Divert Setup
 
-- To use 'Eco' charging mode MQTT must be enabled and 'Solar PV divert' [emonPi MQTT topics](/technical/mqtt/) must be entered.
+- To use 'Eco' charging mode MQTT must be enabled and 'Solar PV divert' [emonPi MQTT topics](../emoncms/mqtt.md) must be entered.
 - Integration with an OpenEnergyMonitor emonPi is straightforward:
-  - *Note: This guide assumes an OpenEnergyMonitor emonPi system is already setup monitoring solar PV, see not [emonPi Solar PV Setup Guide](/applications/solar-pv)*
-  - Connect to emonPi MQTT server, [emonPi MQTT credentials](technical/credentials/#mqtt) should be pre-populated
-  - [MQTT Explorer](http://mqtt-explorer.com/) can be used to view MQTT data e.g. subscribe to `emon/#` to see all OpenEnergyMonitor MQTT data. To lean more about MQTT see [MQTT section of OpenEnergyMonitor user guide](https://guide.openenergymonitor.org/technical/mqtt/)
+  - *Note: This guide assumes an OpenEnergyMonitor emonPi system is already setup monitoring solar PV, see not [emonPi Solar PV Setup Guide](../applications/solar-pv.md)*
+  - Connect to emonPi MQTT server, [emonPi MQTT credentials](../emonsd/download.md) should be pre-populated
+  - [MQTT Explorer](http://mqtt-explorer.com/) can be used to view MQTT data e.g. subscribe to `emon/#` to see all OpenEnergyMonitor MQTT data. To lean more about MQTT see [MQTT section of OpenEnergyMonitor user guide](https://docs.openenergymonitor.org/emoncms/mqtt.html)
 
 <figure>
 
@@ -142,7 +128,7 @@ Preferable to minimise grid import. Excess generation takes into account the pow
 
 #### Advanced Solar PV Divert Setup
 
-In some installations it may be not possible measure the correct metric required by the EVSE e.g solar PV gen or grid import / export. However if is possible to calculate the required metric by addition or subtraction using Emoncms Input Processing the resulting value then then be published to a new MQTT topic which can be used by the EVSE. eg This maybe required for a [Type 1 solar PV system](/applications/solar-pv/#sensor-installation): `Grid (import/export) = site-consumption – Generation`.
+In some installations it may be not possible measure the correct metric required by the EVSE e.g solar PV gen or grid import / export. However if is possible to calculate the required metric by addition or subtraction using Emoncms Input Processing the resulting value then then be published to a new MQTT topic which can be used by the EVSE. eg This maybe required for a [Type 1 solar PV system](../applications/solar-pv.md): `Grid (import/export) = site-consumption – Generation`.
 
 To publish a value to a new MQTT topic feed use the Emoncms `Publish to MQTT` Input Process then enter a new unique MQTT topic e.g `grid` or `import` then use this new MQTT topic in the EVSE config.
 

@@ -55,13 +55,13 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **emonTH V1**
 
-  - [User Guide](https://guide.openenergymonitor.org/setup/emonth)
+  - [User Guide](https://docs.openenergymonitor.org/emonth2/index.html)
   - [Hardware & Firmware](https://github.com/openenergymonitor/emonth)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonth)
 
 **emonTH V2**
 
-  - [User Guide](https://guide.openenergymonitor.org/setup/emonth/)
+  - [User Guide](https://docs.openenergymonitor.org/emonth2/index.html)
   - [Hardware & Firmware](https://github.com/openenergymonitor/emonth2)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonth)
 
@@ -73,16 +73,16 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **MQTT WiFi Relay**
 
-  - [User Guide](https://guide.openenergymonitor.org/integrations/mqtt-relay/)
+  - [User Guide](https://github.com/openenergymonitor/ESP8266_Relay_Board)
   - [Hardware & Firmware](https://github.com/openenergymonitor/ESP8266_Relay_Board)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/wifi-relay)
 
 **Optical Pulse Sensor**
 
-  - [Optical Pulse Sensor Docs](https://guide.openenergymonitor.org/setup/optical-pulse-sensor)
+  - [Optical Pulse Sensor Docs](https://docs.openenergymonitor.org/emonpi/pulse_counting.html)
 
 **OpenEVSE**
-  - [User Guide](https://guide.openenergymonitor.org/integrations/openevse)
+  - [User Guide](https://docs.openenergymonitor.org/emonevse/index.html)
   - [Build Guide](http://openevse.dozuki.com/Guide/OpenEVSE+50A+Charging+Station/8)
   - [WiFi Gateway User Guide & FW](https://github.com/openevse/ESP8266_WiFi_v2.x/)
   - [OpenEVSE Controller FW](https://github.com/OpenEVSE/open_evse)

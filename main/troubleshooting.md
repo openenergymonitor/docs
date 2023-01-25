@@ -9,7 +9,7 @@ If you cant find what you are looking for there. Try searching both the forums a
 
 ---
 
-### Getting in touch
+## Getting in touch
 
 There are various ways to get in touch with us: either to get support, share your experience, or just to say Hello!
 
@@ -21,7 +21,7 @@ If contacting us for support please include as much infomation as possible e.g:
 
 - Shop order number
 - Hardware type and version
-- emonPi / emon Base [pre-built emonSD SD-card version](emonsd/download.html)
+- emonPi / emon Base [pre-built emonSD SD-card version](emonsd/download.md)
 - Emoncms version
 - Any changes made to the default system
 - Steps required to replicate the issue

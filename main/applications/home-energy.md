@@ -8,15 +8,15 @@ The OpenEnergyMonitor system can be used as a simple home energy monitoring syst
 
 ![MyElectric](img/home-energy/home-energy-front.jpg)
 
-### 1. Required Hardware
+## 1. Required Hardware
 
-See Home Energy Monitor tab of [Setup > Required Hardware](/setup/)
+See Home Energy Monitor tab of [Setup > Required Hardware](../emonpi/install.md)
 
 *The Emoncms setup instructions below are applicable to both the emonPi and the emonTx where CT1 is site consumption. If using an emonTx substitute the 'log to feed' instructions to use an input from the emonTx instead of emonPi.*
 
-### 2. Sensor Installation
+## 2. Sensor Installation
 
-See [Setup > Install](/setup/install) section of the setup guide.
+See [Setup > Install](../emonpi/install.md) section of the setup guide.
 
 ```{warning}
 [Please read the CT installation guide before installing.](../electricity-monitoring/ct-sensors/installation.md)
@@ -36,9 +36,9 @@ The polarity of the power readings depends on the orientation of the clip-on CT 
 ![home energy2](img/home-energy/emonpi-install2.jpg)
 
 
-### 3. Emoncms Feed Setup
+## 3. Emoncms Feed Setup
 
-See [Setup > Log Local](/setup/local) section of the setup guide.
+See [Emoncms > Log Local](../emoncms/intro-rpi.md) section of the setup guide.
 
 For automatic MyElectric App setup use the suggested feed names below. **The names are case sensitive.**
 
@@ -48,7 +48,7 @@ For automatic MyElectric App setup use the suggested feed names below. **The nam
  2. Select `log to feed` and create a feed called `use` with the feed engine set to PHPFina and feed `interval=10s`.
  3. Select `power to kwh`, create a feed called `use_kwh` with feed engine `PHPFina` and feed `interval=10s`.
 
-### 4. Configure MyElectric App
+## 4. Configure MyElectric App
 
 With your emonPi or emonTx inputs configured as above and with use of the suggested feed names the MyElectric app will launch with no further configuration required.
 
@@ -58,7 +58,7 @@ Once the required feeds are selected, the Launch App button will appear.
 
 ![MyElectric Config](img/home-energy/myelectric_config.png)
 
-### My Electric App 
+## My Electric App 
 
 The main view shows a moving window power view of site-consumption in the top half and historic daily energy consumption in kWh in the bottom half.
 

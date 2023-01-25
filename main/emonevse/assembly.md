@@ -181,7 +181,7 @@ The EVSE requires:
 
 ## User Guide
 
-Once the hardware is up and running see our [OpenEVSE Software User Guide](https://guide.openenergymonitor.org/integrations/evse-setup/)
+Once the hardware is up and running see our [OpenEVSE Software User Guide](https://docs.openenergymonitor.org/emonevse/setup.html)
 
 ## Safety
 

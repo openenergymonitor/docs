@@ -92,7 +92,7 @@ Solar PV diversion dynamically adjusts the charging rate in real-time based on t
 OpenEVSE & EmonEVSE units have been designed to exceed the safety requirements for EV Charging Stations from SAE J1772, NEC, UL and CE. Before supplying power to the car (and continuously while charging) the EVSE unit conducts a number of checks, no power is supplied until all the checks have passed. See
 
 - [Safety Features](https://openev.freshdesk.com/support/solutions/articles/6000113537-openevse-safety-features)
-- [Safety Features Flow Diagram (.pdf)](/images/integrations/OpenEVSE_flowchart.pdf)
+- [Safety Features Flow Diagram (.pdf)](img/OpenEVSE_flowchart.pdf)
 
 ```{warning}
 Installation should only be undertaken by a qualified electrician.
