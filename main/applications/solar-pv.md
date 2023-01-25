@@ -6,7 +6,7 @@ The OpenEnergyMonitor Solar PV monitor provides real-time and historic informati
 
 My Solar is a dashboard app which runs on Emoncms.
 
-Emoncms and My Solar are pre-installed on the emonPi and can run locally and or data can be posted to our remote emoncms server [Emoncms.org](https://emoncms.org)
+Emoncms and My Solar are pre-installed on the emonBase/emonPi base-station and can be used locally and/or data can be posted to our remote emoncms server [Emoncms.org](https://emoncms.org)
 
 ![SolarPV](img/solar-pv/my-solar-pv.jpg)
 
@@ -19,21 +19,34 @@ Emoncms and My Solar are pre-installed on the emonPi and can run locally and or 
  - Electricity imported from the grid
  - Real-time & historic daily, monthly and annual totals
 
-## 1. Required Hardware
+## 1. Hardware
 
-[emonTx V4](https://shop.openenergymonitor.com/emonpi-solar-pv-bundle/)
+**emonTx4**<br>
+Our latest energy monitoring unit is called the emonTx4. With 6x clip-on CT sensor channels it can be used to monitor the main supply, solar generation and several other circuits in a house. 
 
-<!--<p><a class="btn pull-right" href="[https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4/](https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4/)">View in Shop →</a></p>-->
+The emonTx4 also measures voltage using the emonVs precision voltage sensor and power supply. Voltage sensing ensures accurate measurement of active power, which is what is usually billed for.
 
-The Emoncms setup instructions below are applicable to both the emonPi and the emonTx.
+For a more detailed overview of the emonTx4, please see: [EmonTx4: Overview](../emontx4/overview.md).
+
+The emonTx4 can be used in two configurations: 
+
+1\. The emonTx4 transmits it's measurement data via a 433 MHz radio link to an emonBase base-station, which is then either connected to the local network via WiFi or Ethernet. This provides full local data logging and visualisation capability - as well as the option to forward the data to a remote server. For more information, please see:
+
+- [emonTx4, emonVs & emonBase installation guide](../emontx4/emontx4_emonbase_install.md)
+- [emonTx4 shop item](https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4)
+
+2\. The emonTx4 can alternatively used in stand-alone mode with a WiFi adapter board. This is more suited for data logging on a remote server such as our [emoncms.org](https://emoncms.org) service. For more information, please see:
+
+- [emonTx4 ESP8266 Wi-Fi Expansion Board](https://docs.openenergymonitor.org/emontx4/expansion_boards.html#adafruit-esp8266-huzzah-wi-fi-expansion-board)
+- [emonTx4 WiFi shop item](https://shop.openenergymonitor.com/emontx-v4-with-onboard-wifi/)
 
 ## 2. Sensor Installation
 
+*The following image shows our original emonPi energy monitor, the same CT configuration options are applicable for our latest emonTx4 hardware as well.*
+
 ![](img/solar-pv/solar-pv-install.webp)
 
-It is important that an  AC-AC adapter or emonVS voltage sensor is used for solar PV monitoring. 
-
-**All sensors should be connected to the emonPi before powering up**
+It is important that a voltage sensor is used for solar PV monitoring. 
 
 ```{warning}
 [Please read the CT installation guide before installing.](../electricity-monitoring/ct-sensors/installation.md)
@@ -43,6 +56,8 @@ Your safety is your responsibility. Clip-on current sensors are non-invasive and
 ```{note}
 The clip-on CT sensors must be clipped round either the Line or Neutral AC wire, **Not both**.
 ```
+
+*While the images below show the original blue CT sensors, our latest CT sensors for the emonTx4 are different in appearence but the principle of the image is the same.*
 
 ![CT sensor installation ](img/solar-pv/ctinstall.jpg)
 
@@ -64,34 +79,46 @@ Connect CT's are follows:
 
 Connect CT's as follows:
 
-- CT1 (power 1) = grid import (positive) / export (negative), and
-- CT2 (power 2) = solar generation,
+- CT1 (power 1) = grid import (positive) and export (negative).
+- CT2 (power 2) = solar generation.
 
 *Type 2 system:  Site-consumption = Generation + Grid import (negative when exporting)*
 
 **All solar PV systems can be monitored using the Type-2 method; it's highly recommended to use this method.**
 
 ```{note}
-The polarity of the power readings depends on the orientation of the clip-on CT sensor. Orientate the CTs so that generation and site-consumption is positive and grid import/export is <b>positive when importing and negative when exporting</b>. The correct orientation can be determined by trial and error. But for CT sensors from our shop, the writing on the side should normally be on the downstream/consumer side, so try that first.
+The polarity of the power readings depends on the orientation of the clip-on CT sensor. Orientate the CTs so that generation and site-consumption is positive and grid import/export is <b>positive when importing and negative when exporting</b>.
 ```
 
 ## 3. Configure Feeds
 
-On the Emoncms Inputs page click on the spanner icon next to your emonPi Inputs, and then from the left-hand menu choose _OpenEnergyMonitor > EmonPi > Solar PV Type 1/2_ (as appropriate). Click _Save_ and the Input Processing and solar PV feeds will be automatically created:
+With the emonTx4 hardware setup, you should now see the emonTx4 inputs on the emoncms inputs page:
 
-![](img/solar-pv/v10-emonpi-solar-inputs.png)
+![](img/solar-pv/emontx4_inputs.png)
 
-![](img/solar-pv/v10-device-module.png)
+### Type 2 Configuration
 
-![](img/solar-pv/v10-solar-inputs.png)
+**Power 1 (P1) configuration:** The Power 1 input is measuring grid import (positive values) and grid export (negative values). Configure this input to record imported consumption only. To do this, use the `Allow positive` input process and then log the result to a feed using the `Log to Feed` input process. Process the power data into a cumulative kWh value using the `Power to kWh` input process.
 
-![](img/solar-pv/v10-power1-inputprocess.png)
+Click on the spanner icon next to the right hand side of the input to open the input processing configuration window for the P1 input. Select the Emoncms Fixed Interval feed storage engine and 10s feed interval when creating the feeds. The result should look like this:
 
-![](img/solar-pv/v10-power2-inputprocess.png)
+![](img/solar-pv/emonTx4_type2_P1.png)
 
-![](img/solar-pv/v10-solar-feeds.png)
+**Power 2 (P2) configuration:** The Power 2 input is measuring solar generation (positive values). Configure this input to record solar generation and then sum with the grid import/export value to calculate total house consumption. Start by recording the solar generation power value with `Log to Feed`, then the cumulative solar generation kWh value using `Power to kWh`. Then add the grid import/export value using the `+ input` input process, the result passed back is now total house consumption. Finally record the result with `Log to Feed`, and a cumulative consumption kWh value using `Power to kWh`.
 
-Video guide for solar PV Feed & My Solar App Setup:
+Again, select the Emoncms Fixed Interval feed storage engine and 10s feed interval when creating the feeds. The result should look like this:
+
+![](img/solar-pv/emonTx4_type2_P2.png)
+
+The resulting input list looks like this:
+
+![](img/solar-pv/emontx4_type2_summary.png)
+
+and feed list:
+
+![](img/solar-pv/emonTx4_feeds.png)
+
+Video guide for solar PV Feed & My Solar App Setup, recorded for the emonPi and on an earlier version of Emoncms but the overall process is the same with our latest hardware.
 
 <div class='videoWrapper'>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Nc6YSWqqxkA" frameborder="0" allowfullscreen></iframe>
