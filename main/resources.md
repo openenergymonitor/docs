@@ -18,31 +18,26 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 **emonPi**
 
   - [Documentation](emonpi/index.md)
-  - [Firmware](https://github.com/openenergymonitor/emonpi)
-  - [Hardware Docs](https://wiki.openenergymonitor.org/index.php?title=EmonPi)
-  - [Hardware CAD Design](https://github.com/openenergymonitor/Hardware/tree/master/emonPi)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emonpi)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonpi)
 
 **emonTx v3**
 
   - [Documentation](emontx3/index.md)
-  - [Hardware & Official Firmware](https://github.com/openenergymonitor/emontx3)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emontx3)
   - [Other emonTx firmware examples](https://github.com/openenergymonitor/emonTxFirmware)
-  - [Hardware Docs](https://wiki.openenergymonitor.org/index.php?title=EmonTx_V3.4)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emontx)
 
 **RFM69Pi**
 
   - [Documentation](/emonbase/rfm69-pi.md)
-  - [Firmware](https://github.com/openenergymonitor/rfm2pi)
-  - [Hardware Docs](https://wiki.openenergymonitor.org/index.php/RFM69Pi_V3)
-  - [Hardware CAD Design](https://github.com/openenergymonitor/rfm2pi)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/rfm2pi)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/rfm69pi)
 
 **emonESP**
 
   - [User Guide](emontx3/esp8266.md)
-  - [Firmware & Hardware](https://github.com/openenergymonitor/emonesp)
+  - [Firmware](https://github.com/openenergymonitor/emonesp)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonesp)
 
  
@@ -54,39 +49,32 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **emonTx Arduino Shield**
 
-  - [User Guide](https://wiki.openenergymonitor.org/index.php/EmonTx_Arduino_Shield#emonTx_Arduino_Shield)
-  - [Firmware](https://github.com/openenergymonitor/emontx-shield)
-  - [Hardware Docs](https://wiki.openenergymonitor.org/index.php/EmonTx_Arduino_Shield#emonTx_Arduino_Shield)
-  - [Hardware Design](https://github.com/openenergymonitor/emontx-shield)
+  - [User Guide](https://github.com/openenergymonitor/emontx-shield)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emontx-shield)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emontx)
 
 **emonTH V1**
 
   - [User Guide](https://guide.openenergymonitor.org/setup/emonth)
-  - [Firmware](https://github.com/openenergymonitor/emonth)
-  - [Hardware Docs](https://wiki.openenergymonitor.org/index.php/EmonTH_V1.5)
-  - [Hardware CAD Design](https://github.com/openenergymonitor/emonth)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emonth)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonth)
 
 **emonTH V2**
 
   - [User Guide](https://guide.openenergymonitor.org/setup/emonth/)
-  - [Firmware](https://github.com/openenergymonitor/emonth2)
-  - [Hardware CAD Design](https://github.com/openenergymonitor/emonth2)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emonth2)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonth)
 
 **emonGLCD**
 
   - [Build Guide](https://github.com/openenergymonitor/EmonGLCD/tree/master/buildguide) 
-  - [emonGLCD Firmware](https://github.com/openenergymonitor/emonglcd)
-  - [emonGLCD Hardware CAD Design](https://github.com/openenergymonitor/emonglcd)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/emonglcd)
   - [Display Forum Category](https://community.openenergymonitor.org/c/hardware/display)
 
 **MQTT WiFi Relay**
 
   - [User Guide](https://guide.openenergymonitor.org/integrations/mqtt-relay/)
-  - [Hardware CAD Design](https://github.com/mharizanov/ESP8266_Relay_Board)
-  - [Firmware](https://github.com/openenergymonitor/ESP8266_Relay_Board)
+  - [Hardware & Firmware](https://github.com/openenergymonitor/ESP8266_Relay_Board)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/wifi-relay)
 
 **Optical Pulse Sensor**
