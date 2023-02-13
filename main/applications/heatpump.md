@@ -68,6 +68,8 @@ The COP of a heat pump can be measured by measuring the heat output in addition 
 - [Reading from a Modbus SDM120 electricity meter using emonPi/emonBase](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#reading-from-a-sdm120-single-phase-meter)
 - Please read our guide on selecting the right heat meter, available in our heat pump monitor github repository here: [Github: Guide to selecting the right heat meter](https://github.com/openenergymonitor/HeatpumpMonitor/blob/master/selectingheatmeter.md)
 
+**We recommend using the Modbus SDM120 electricity meter** rather than the MBUS variant. We have found the Modbus version to be more reliable.
+
 ## RaspberryPi HAT
 
 In addition to configurations using our standard emonPi and emonTx monitoring hardware. We have also developed dedicated hardware designs with heat pump monitoring in mind. 
