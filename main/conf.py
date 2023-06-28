@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'OpenEnergyMonitor'
-copyright = '2022, OpenEnergyMonitor'
+copyright = '2023, OpenEnergyMonitor'
 author = 'Trystan'
 release = '0.0.1'
 
