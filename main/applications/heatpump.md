@@ -1,10 +1,17 @@
 # Heat Pump Monitoring
 
+![HeatpumpMonitoring](img/heatpump/hpdata.png)
+
 The OpenEnergyMonitor system can be used to monitor the performance of heat pumps. The following covers a number of different configurations of the system from basic to more advanced monitoring.
 
-[**Purchase Level 3 Heat Pump Monitoring Bundle**](https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle/)
+- [**Purchase Level 3 Heat Pump Monitoring Bundle**](https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle/)
 
-![HeatpumpMonitoring](img/heatpump/hpdata.png)
+## Heat Pump Monitoring Data Comparison Website 
+
+We've setup [heatpumpmonitor.org](https://heatpumpmonitor.org) website to compare anonymous live data from real-world heat pump installations. 
+
+***
+
 
 ## Level 1 (no COP): Electricity Consumption:
 
@@ -69,20 +76,6 @@ The COP of a heat pump can be measured by measuring the heat output in addition 
 - Please read our guide on selecting the right heat meter, available in our heat pump monitor github repository here: [Github: Guide to selecting the right heat meter](https://github.com/openenergymonitor/HeatpumpMonitor/blob/master/selectingheatmeter.md)
 
 **We recommend using the Modbus SDM120 electricity meter** rather than the MBUS variant. We have found the Modbus version to be more reliable for this electricity meter.
-
-## RaspberryPi HAT
-
-In addition to configurations using our standard emonPi and emonTx monitoring hardware. We have also developed dedicated hardware designs with heat pump monitoring in mind. 
-
-```{image} img/heatpump/pimbusreader.jpeg
-:width: 300px
-:align: right
-```
-
-This is a RaspberryPi HAT designed with heat pump monitoring in mind. It can interface with heat meters via MBUS and Modbus support for reading from SDM120 electricity meters can be added via a [Modbus USB adaptor](https://shop.openenergymonitor.com/modbus-rs485-to-usb-adaptor/). It has a RaspberryPi at it's core running our [emonSD image](https://shop.openenergymonitor.com/emonsd-industrial-pre-loaded-sd-card/) enabling local or/and remote logging and data visualisation.<br>
-- [Github Documentation & Hardware Design](https://github.com/openenergymonitor/HeatpumpMonitor/tree/master/HeatpumpMonitorPi)
-- [Purchase kit from OpenEnergyMonitor shop](https://shop.openenergymonitor.com/mbus-temperature-raspberrypi-hat-heatpump-monitoring/)
-
 
 ## My Heatpump dashboard
 
