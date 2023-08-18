@@ -1,3 +1,5 @@
+<a class="btn" href="https://shop.openenergymonitor.com/evse/">Buy in Shop</a>
+
 # Overview
 
 OpenEnergyMonitor has partnered with [OpenEVSE](https://www.openevse.com) to develop the EmonEVSE unit which is fully certified and designed for the European market. We are also the official European re-seller of OpenEVSE.
