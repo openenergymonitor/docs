@@ -1,3 +1,5 @@
+<a class="btn" href="https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle-emonhp/">Buy in Shop</a>
+
 # Heat Pump Monitoring
 
 ![HeatpumpMonitoring](img/heatpump/hpdata.png)
