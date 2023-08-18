@@ -44,7 +44,7 @@ We have been collaborating with OpenEVSE to improve the Emoncms remote data logg
 <div class="divider"></div>
 <li><a href="http://files.openenergymonitor.org/datasheet/EmonEVSE-datasheet.pdf"><b>Installation Guide & Datasheet</b></a></li>
 <li><a href="setup"><b>User Setup Guide</b></a></li>
-<a class="btn pull-center" href="https://shop.openenergymonitor.com/emonevse-wifi-connected-ev-charging-station-iec-60947-5-type-2/">View in Shop &rarr; </a>
+<a class="btn pull-center" href="https://shop.openenergymonitor.com/emonevse-wifi-connected-ev-charging-station-iec-60947-5-type-2/">Buy in Shop</a>
 </ul>
 </td>
 <td>
@@ -67,7 +67,7 @@ We have been collaborating with OpenEVSE to improve the Emoncms remote data logg
 <div class="divider"></div>
 <li><a href="assembly"><b>Assembly Guide</b></a></li>
 <li><a href="setup"><b>User Setup Guide</b></a></li>
-<a class="btn pull-center" href="https://shop.openenergymonitor.com/openevse-wifi-emoncms-ev-charging-station-kit/">View in Shop &rarr; </a>
+<a class="btn pull-center" href="https://shop.openenergymonitor.com/openevse-wifi-emoncms-ev-charging-station-kit/">Buy in Shop</a>
 </ul>
 </td>
 </tr>
