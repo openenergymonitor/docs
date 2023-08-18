@@ -1,3 +1,5 @@
+<a class="btn" href="https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emontx-v4/">Buy in Shop</a>
+
 # Home Energy Monitoring
 
 The OpenEnergyMonitor system can be used as a simple home energy monitoring system for understanding energy consumption.
