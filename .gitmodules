@@ -28,3 +28,6 @@
 [submodule "emonth2"]
 	path = emonth2
 	url = https://github.com/openenergymonitor/emonth2
+[submodule "emonpi2"]
+	path = emonpi2
+	url = git@github.com:openenergymonitor/emonpi2.git
