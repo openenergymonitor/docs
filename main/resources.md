@@ -2,7 +2,7 @@
 
 A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Software
 
-**emonTx v4**
+**emonTx4**
 
   - [Documentation](emontx4/index.md)
   - [Github repository](https://github.com/openenergymonitor/emontx4)
@@ -69,7 +69,7 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
   - [Build Guide](https://github.com/openenergymonitor/EmonGLCD/tree/master/buildguide) 
   - [Hardware & Firmware](https://github.com/openenergymonitor/emonglcd)
-  - [Display Forum Category](https://community.openenergymonitor.org/c/hardware/display)
+  - [Forum Category](https://community.openenergymonitor.org/c/hardware/display)
 
 **MQTT WiFi Relay**
 
@@ -92,12 +92,12 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 **Emoncms**
 
   - [Emoncms GitHub](https://github.com/emoncms/emoncms)
-  - [Emoncms forum category](https://community.openenergymonitor.org/c/emoncms)
+  - [Forum category](https://community.openenergymonitor.org/c/emoncms)
 
 **emonSD Pre-built SD card**
 
   - [emonSD download](emonsd/download.md)
-  - [emonSD forum category](https://community.openenergymonitor.org/c/emonsd)
+  - [Forum category](https://community.openenergymonitor.org/c/emonsd)
 
 **emonHub**
   

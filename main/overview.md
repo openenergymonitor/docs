@@ -13,7 +13,7 @@ The system is made up of five main units. These can be configured to work for a 
 :align: left
 ```
 
-**emonTx v4:** A 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. It can also send data via an WiFi extension boards or directly via USB.<br><br>
+**emonTx v4:** A 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. It can also send data via a Wi-Fi extension board or directly via USB.<br><br>
 
 ```{image} img/emonVs-min.png
 :width: 50px
@@ -25,7 +25,7 @@ The system is made up of five main units. These can be configured to work for a 
 :width: 50px
 :align: left
 ```
-**emonBase:** A raspberry pi base-station that receives data sent from the emonTx4. Hosts the emonCMS software for full local data logging and visualisation capability. With new direct SPI RFM69 radio transceiver.
+**emonBase:** A Raspberry Pi base-station that receives data sent from the emonTx4. Hosts the emonCMS software for full local data logging and visualisation capability. With new direct SPI RFM69 radio transceiver.
 <br><br>
 
 ```{image} img/ctsensor.png
@@ -62,7 +62,7 @@ The system is made up of five main units. These can be configured to work for a 
 :width: 50px
 :align: left
 ```
-**emonTh:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.
+**emonTH:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.
 <br><br>
 
 ```{image} img/voltagesensor.png

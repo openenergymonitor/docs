@@ -5,7 +5,7 @@ A good place to start with troubleshooting is the forum FAQ, followed by the Emo
 - [Community forums: FAQ](https://community.openenergymonitor.org/t/frequently-asked-questions/3005)
 - [Emoncms/emonPi/emonBase troubleshooting](emoncms/troubleshooting.md)
 
-If you cant find what you are looking for there. Try searching both the forums and the documentation here for reports of similar issues.
+If you can't find what you are looking for there, try searching both the forums and the documentation here for reports of similar issues.
 
 ---
 
