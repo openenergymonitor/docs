@@ -6,10 +6,6 @@ ln -s ../emonth2/docs main/emonth2
 ln -s ../emonpi/docs main/emonpi
 ln -s ../emonbase/docs main/emonbase
 ln -s ../EmonScripts/docs main/emonsd
-ln -s ../learn/view/electricity-monitoring main/electricity-monitoring
-ln -s ../learn/view/sustainable-energy main/sustainable-energy
-ln -s ../learn/view/pv-diversion main/pv-diversion
-ln -s ../learn/view/heatpumps main/heatpumps
 ln -s ../emonhub/docs main/emonhub
 ln -s ../emoncms/docs/user_guide main/emoncms
 
