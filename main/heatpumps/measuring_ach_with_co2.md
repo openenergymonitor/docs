@@ -37,7 +37,7 @@ A useful paper linked in Michael’s piece gives CO<sub>2</sub> production rates
 
 To make this process easier we have put together a tool that includes an occupant activity schedule builder. The default example when you open the tool is for a family of four. This range of activities listed results in just over 1000 L/day of CO<sub>2</sub> production: 
 
-[https://openenergymonitor.org/tools/CO2_sim.html](https://openenergymonitor.org/tools/CO2_sim.html)
+[https://openenergymonitor.org/tools/co2_sim.html](https://openenergymonitor.org/tools/co2_sim.html)
 
 ![co2sim_schedule.png](img/co2sim_schedule.png)
 
