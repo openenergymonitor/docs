@@ -8,3 +8,4 @@ Learn: Heat pumps
    Basic Theory <basics.md>
    tools.md
    heatpumpmonitor.md
+   measuring_ach_with_co2.md
