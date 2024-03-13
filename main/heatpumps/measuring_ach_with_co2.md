@@ -2,7 +2,30 @@
 
 ## Decay method
 
-To be added soon...
+When we occupy a room our breathing raises the CO<sub>2</sub> concentration level. If the supply of fresh air into the room is low it can rise from ambient levels of around 420 ppm all the way up to several thousand ppm. If we then leave the room the CO<sub>2</sub> concentration level will fall following an exponential curve that is directly proportional to the air change rate. 
+
+The following example screenshot from the emoncms CO2 monitor app shows what this looks like:
+
+![co2_curves.png](img/co2_curves.png)
+
+We can estimate the air change rate with only two CO2 readings, the time between these readings (ideally 3-6 hours) and an estimate for the baseline CO2 level:
+
+![decay_equation.png](img/decay_equation.png)
+
+- C<sub>start</sub>: CO2 concentration at the start of the period e.g 890 ppm
+- C<sub>end</sub>: CO2 concentration at the end of the period e.g 440 ppm
+- C<sub>base</sub>: baseline CO2 concentration e.g 420 ppm
+- t<sub>hours</sub>: Time in hours e.g 8 hours
+
+Try copying this equation into a calculator:
+
+    ACH = −1×ln((440−420)÷(890−420))÷8 = 0.4 ACH
+
+It is quite difficult with the above equation to guess the baseline correctly as it can be different to the expected outside concentration level of 420 ppm.
+
+The Emoncms CO2 sensing app gets around this by iterratively refining an exponential decay curve fit against what could be several hundred datapoints. This ensures that the best combination air change rate and baseline CO2 concentration values are found that describe the decay curve measured from the sensor. This curve is described with the following rearangement of the above equation:
+
+    Cend = (Cstart - Cbase) x exp(-1 x ACH x Thours) + Cbase
 
 ![co2monitor_app_decay.png](img/co2monitor_app_decay.png)
 
