@@ -4,17 +4,17 @@
 
 When we occupy a room our breathing raises the CO<sub>2</sub> concentration level. If the supply of fresh air into the room is low it can rise from ambient levels of around 420 ppm all the way up to several thousand ppm. If we then leave the room the CO<sub>2</sub> concentration level will fall following an exponential curve that is directly proportional to the air change rate. 
 
-The following example screenshot from the emoncms CO2 monitor app shows what this looks like:
+The following example screenshot from the emoncms CO<sub>2</sub> monitor app shows what this looks like:
 
 ![co2_curves.png](img/co2_curves.png)
 
-We can estimate the air change rate with only two CO2 readings, the time between these readings (ideally 3-6 hours) and an estimate for the baseline CO2 level:
+We can estimate the air change rate with only two CO<sub>2</sub> readings, the time between these readings (ideally 3-8 hours) and an estimate for the baseline CO<sub>2</sub> level:
 
 ![decay_equation.png](img/decay_equation.png)
 
-- C<sub>start</sub>: CO2 concentration at the start of the period e.g 890 ppm
-- C<sub>end</sub>: CO2 concentration at the end of the period e.g 440 ppm
-- C<sub>base</sub>: baseline CO2 concentration e.g 420 ppm
+- C<sub>start</sub>: CO<sub>2</sub> concentration at the start of the period e.g 890 ppm
+- C<sub>end</sub>: CO<sub>2</sub> concentration at the end of the period e.g 440 ppm
+- C<sub>base</sub>: baseline CO<sub>2</sub> concentration e.g 420 ppm
 - t<sub>hours</sub>: Time in hours e.g 8 hours
 
 Try copying this equation into a calculator:
@@ -23,11 +23,36 @@ Try copying this equation into a calculator:
 
 It is quite difficult with the above equation to guess the baseline correctly as it can be different to the expected outside concentration level of 420 ppm.
 
-The Emoncms CO2 sensing app gets around this by iterratively refining an exponential decay curve fit against what could be several hundred datapoints. This ensures that the best combination air change rate and baseline CO2 concentration values are found that describe the decay curve measured from the sensor. This curve is described with the following rearangement of the above equation:
+The Emoncms CO<sub>2</sub> monitoring app gets around this by iteratively refining an exponential decay curve fit against what could be several hundred data-points. This ensures that the best combination air change rate and baseline CO<sub>2</sub> concentration values are found that describe the decay curve measured from the sensor. This curve is described with the following rearrangement of the above equation:
 
     Cend = (Cstart - Cbase) x exp(-1 x ACH x Thours) + Cbase
 
+### Real world example
+
+The following decay curves are from 3 CO<sub>2</sub> sensors placed at different points in an open plan living room, dining room and kitchen of a mid-terrace house of stone construction which has not had any special attention to draught proofing. The decay period is over-night with the occupants asleep upstairs and the door to the space closed.
+
+After refining each curve in turn by pressing the 'Refine' button a couple of times, the air change rates that gives the best fit are found to be between 0.33 ACH and 0.37 ACH.
+
 ![co2monitor_app_decay.png](img/co2monitor_app_decay.png)
+
+Selecting a number of further overnight decay curve examples from January 2024:
+
+- January 14th, 0.33-0.40 ACH, wind speed 2 m/s
+- January 17th, 0.32-0.37 ACH, wind speed 2 m/s
+- January 18th, 0.49-0.60 ACH, wind speed 1 m/s
+- January 19th, 0.51-0.57 ACH, wind speed 6 m/s
+- January 20th, 0.50-0.56 ACH, wind speed 11 m/s
+- January 23th, 0.73-0.77 ACH, wind speed 6 m/s
+- January 25th, 0.42-0.41 ACH, wind speed 7 m/s
+
+In general the CO<sub>2</sub> decay method works well for spaces like a downstairs living room that can be closed off from the rest of the house and left unoccupied over a long enough period but it can be difficult to get whole house decay rates as it is difficult to get a relatively high CO<sub>2</sub> starting point throughout the house, followed by a long enough period with no occupancy. 
+
+Perhaps better results could be obtained as part of a structured test, with CO2 levels elevated artificially to an 2000 ppm throughout the house e.g with a CO2 fire extinguisher and circulation fans before then leaving the house unoccupied.
+
+
+The other downside to decay tests is that it's hard to capture the effect of general occupancy, opening doors between rooms, leaving a front door open for 5 minutes while you pack the car etc. The next method attempts to get around that but introduces an element of guess work that the decay method avoids.
+
+--- 
 
 ## Averaging method
 
@@ -73,7 +98,7 @@ A day with occupants:
 Use this tool to estimate the likely range and average figure for the building that you are measuring.
 
 
-## Real world example
+### Real world example
 
 Data from six CO<sub>2</sub> sensors were collected throughout January 2024 for a mid-terrace, solid stone house. By weighting the average CO<sub>2</sub> concentration from each sensor according to the volume it represents, the overall average CO<sub>2</sub> concentration was determined to be 810 ppm.
 
