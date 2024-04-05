@@ -9,6 +9,9 @@ The docs can be built and previewed locally:
     git clone https://github.com/openenergymonitor/docs
     git submodule update --init
 
+Note: The steps below could we streamlined with Poetry or with Venv so that there are less cross-platform issues.
+      Another thing we could do is to use docker so it's even more cross-platform compatible and can be used for CI/CD with Github Actions
+
 ### 2. Install Sphinx
 
 See: [http://www.sphinx-doc.org/en/master/usage/installation.html](http://www.sphinx-doc.org/en/master/usage/installation.html)
