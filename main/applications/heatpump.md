@@ -24,14 +24,13 @@ We've setup [heatpumpmonitor.org](https://heatpumpmonitor.org) website to compar
 
 At a basic level it is possible to use either the EmonTx or the EmonPi to monitor the electrical consumption of a heat pump by clipping a CT sensor around the supply to the unit. This provides detailed 10s resolution power consumption graphs as well as cumulative energy consumption in kWh on a daily/monthly/annual basis. It's possible to use the power graphs to gain a basic insight into potential issues such as excessive cycling.
 
-To install an emonTx4, emonTx3 or emonPi follow the general setup guides here, clip the CT sensor around either the insulated line or neutral cable for the heat pump rather than the whole house cable.
+To install an emonTx, or emonPi follow the general setup guides here, clip the CT sensor around either the insulated line or neutral cable for the heat pump rather than the whole house cable.
 
+- [Buy emonPi2](https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emonpi2/)
+- [Install emonPi2](https://docs.openenergymonitor.org/emonpi2/index.html)
 - [Install emonTx4](../emontx4/emontx4_emonbase_install.md)
-- [Install emonTx3 & emonBase](../emontx3/install.md)
-- [Install emonTx3 & ESP8266](../emontx3/esp8266.md)
-- [Install emonPi](../emonpi/install.md)
 
-It is also possible to measure the electricity consumption with higher accuracy using a pulse output from an electricity meter or modbus output from an SDM120 DIN rail mounted meter.
+It is also possible to measure the electricity consumption with modbus electricity meter e.g [SDM120](https://shop.openenergymonitor.com/sdm120-modbus-mid-45a/)
 
 - [+ Add Pulse Counting](../emontx4/other_sensors.md)
 - [Reading from a Modbus SDM120 electricity meter using emonPi/emonBase](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#reading-from-a-sdm120-single-phase-meter)
@@ -55,8 +54,9 @@ The EmonTx and EmonPi units both support temperature sensing using one-wire DS18
 
 - [EmonTx4 heat pump monitor guide](../emontx4/heatpumpmonitor.md)
 - [EmonTx4 temperature sensing](../emontx4/other_sensors.md)
-- [EmonTx3 temperature sensing](../emontx3/install.md)
-- [EmonPi temperature sensing](../emonpi/temperature_sensing.md)
+
+- [Buy emonPi2](https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emonpi2/)
+- [Install emonPi2](https://docs.openenergymonitor.org/emonpi2/index.html)
 
 *The theoretical performance of a heat pump is given by the Carnot COP equation, see [Github: A very simple heat pump model](https://github.com/emoncms/dynamic/blob/master/docs/heatpumpmodel.md). For an air-source heatpump measuring the water flow temperature and the outside air temperature can be used to estimate the expected COP. Many heat pumps provide an indication of expected COP at different ambient air and water temperatures in their datasheets. The Emoncms heat pump app includes a tool to estimate COP using this equation.*
 
