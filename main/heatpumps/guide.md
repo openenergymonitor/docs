@@ -27,7 +27,11 @@ At 6:54 Glyn discusses how he did his heat loss calculation using [HeatLoss.js](
 
 Glyn covers briefly the importance of designing for low flow temperatures (35-40C) when it is -3C outside (design temperature) and the related radiator upgrades that he made to enable running the system at these lower flow temperatures.
 
-Note that Glyn used a particularly low air-change rate for his calculation of 0.3 ACH based on the result from a blower door test. These are far lower than the values given in MCS/CIBSE guidance for pre-2000 properties which are usually around 1.5 ACH for properties of this age (range 1.0-3.0 ACH). 
+Note that Glyn used a particularly low air-change rate for his calculation of 0.3 ACH based on the result from a blower door test. We have since performed further in-use CO2 monitoring which suggested a range of air change rates from 0.3 to 0.6 ACH. The minimum whole dwelling ventilation rate in the part F UK building regulations for a 2-bed house is 25 L/s which works out to 0.6 ACH for Glyn's building volume. 
+
+Part F regulations are there to ensure healthy air quality. Ventilation rates should ideally be responsive to demand e.g higher ventilation rates when humidity and CO2 rise too high and lower when levels are healthy. See thread: [Measuring air change rates with CO2 sensors for heat pump heat loss calculation](https://community.openenergymonitor.org/t/measuring-air-change-rates-with-co2-sensors-for-heat-pump-heat-loss-calculation/25817) for a wider discussion of this topic.
+
+Even 0.6 ACH is far lower than the values given in MCS/CIBSE guidance for pre-2000 properties which are around 1.5 ACH for properties of this age (range 1.0-3.0 ACH) and so we will still be avoiding most of the risk of over-estimating heat loss.
 
 **YouTube:** [2. Air Source Heat Pump 1st Winter Performance in Solid Stone Welsh Cottage](https://www.youtube.com/watch?v=kkNx2oSO-S4)
 
@@ -47,7 +51,9 @@ Note that Glyn used a particularly low air-change rate for his calculation of 0.
 
 In the introduction, Glyn addresses the validation of his space heating demand estimate through monitored results, highlighting the discrepancy with EPC estimates that, in his case, doubled the projected space heating demand. 
 
-Glyn discusses the result of his blower door test in more detail at 3:10 which suggests an air change rate as low as 0.3 ACH. The video presents results from the coldest day monitored so far where the average heat input from the heat pump was 3.0 kW. This agrees well with the calculated heat demand of 3.3 kW at -3C obtained using these lower air change rate values.
+Glyn discusses the result of his blower door test in more detail at 3:10. The video presents results from the coldest day monitored up to that point, where the average heat input from the heat pump was 3.0 kW, the difference in temperature between inside and outside was 21K.
+
+This agreed well with Glyn's calculated heat demand of 3.3 kW at -3C using 0.3 ACH. Further colder days this winter suggested a slightly higher heat loss rate closer to 3.6±0.5 kW [See HeatpumpMonitor.org heat demand tool](https://heatpumpmonitor.org/heatloss?id=4). Using 0.6 ACH for the heat loss calculation results in a heat loss of 4.0 kW which is within the upper edge of uncertainty looking at the measured data.
 
 ## Case study 2: 1980s Bungalow, Vaillant Arotherm 5kW
 
