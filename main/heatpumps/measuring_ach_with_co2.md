@@ -47,7 +47,7 @@ Selecting a number of further overnight decay curve examples from January 2024:
 
 In general the CO<sub>2</sub> decay method works well for spaces like a downstairs living room that can be closed off from the rest of the house and left unoccupied over a long enough period but it can be difficult to get whole house decay rates as it is difficult to get a relatively high CO<sub>2</sub> starting point throughout the house, followed by a long enough period with no occupancy. 
 
-Perhaps better results could be obtained as part of a structured test, with CO2 levels elevated artificially to an 2000 ppm throughout the house e.g with a CO2 fire extinguisher and circulation fans before then leaving the house unoccupied.
+Perhaps better results could be obtained as part of a structured test, with CO2 levels elevated artificially to 2000 ppm throughout the house e.g with a CO2 fire extinguisher and circulation fans before then leaving the house unoccupied.
 
 
 The other downside to decay tests is that it's hard to capture the effect of general occupancy, opening doors between rooms, leaving a front door open for 5 minutes while you pack the car etc. The next method attempts to get around that but introduces an element of guess work that the decay method avoids.
