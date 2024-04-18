@@ -36,6 +36,12 @@ The system is made up of four main units. These can be configured to work for a 
 
 ---
 
+<p><b>Timeline</b></p>
+
+% ![image](img/timeline.png)
+
+---
+
 <p><b>Earlier hardware</b></p>
 
 ```{image} img/emontx4-min.png
@@ -116,7 +122,7 @@ All in one energy monitor. 2x CT sensor inputs, 1x ACAC Voltage sensor input, te
 ---
 
 **emonTx + emonPi**<br>
-It also possible to add one or more emonTx units to an emonPi to gain additional CT sensor inputs. 
+It also possible to add one or more emonTx units to an emonPi to gain additional CT sensor inputs.
 
 ![image](img/emontxandemonpi.png)
 
