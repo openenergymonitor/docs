@@ -38,7 +38,34 @@ The system is made up of four main units. These can be configured to work for a 
 
 <p><b>Timeline</b></p>
 
-% ![image](img/timeline.png)
+Open Energy Monitor has developed and evolved different hardware solutions overtime:
+
+```{image} img/timeline.png
+:width: 500px
+:align: center
+```
+
+<!-- 
+Invisible section: Contains source code for the image above using https://playground.diagram.codes/d/timeline
+    width=700
+    "2010-2011": "emonTx1️"
+    "March 2012": "emonTx2\nemonGLCD\nemonBase"
+    "April 2012": "First Heat\nPump\napplication\n♨️"
+    "October 2012": "NanodeRF"
+    "November 2013": "emonTx3 v3.2\emonTHv1/EmonTX Shield"
+    "February 2015": "RFM69Pi3"
+    "April 2015": "emonPi1"
+    "2016": "emonTx3 v3.4"
+    "November 2016": "emonTH2"
+    "~2017": "OpenEVSE\nEmonVSE\n🚙"
+    "October 2017": "IotaWatt"
+    "March 2020": "OVMS"
+    "November 2022": "emonTx4"
+    "December 2023": "emonPi2"
+    "Future": "🔮"
+    "Summer 2024": "emonTx5"
+    "2025": "emonPi3 & emonTx6" 
+-->
 
 ---
 
