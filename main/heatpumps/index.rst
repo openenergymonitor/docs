@@ -9,3 +9,4 @@ Learn: Heat pumps
    tools.md
    heatpumpmonitor.md
    measuring_ach_with_co2.md
+   terminology.md
