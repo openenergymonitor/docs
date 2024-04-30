@@ -57,7 +57,7 @@ Collective term for equipment which modifies a building’s temperature and/or h
 A vessel that separates two pumped systems and allows each to operate with minimal pressure interference (e.g. a buffer tank between the heat pump and emitter circuits, or between UFH and radiator loops, which may require different flows). 
 
 **LMTD: Log Mean Temperature Difference**<br>
-Effective temperature driving force for heat transfer in a heat exchanger when one or both fluids are non-isothermal. Used for rating heat exchanger performance from Q = OHTC * Area * LMTD for countercurrent exchangers. 
+Effective temperature driving force for heat transfer in a heat exchanger when one or both fluids are non-isothermal. Used for rating heat exchanger performance from Q = OHTC &times; Area &times; LMTD for countercurrent exchangers. 
 
 **LS: Lockshield valve**<br>
 Radiator valve, normally left in a preset position, used for adjusting flow to balance heat output from multiple radiators.
@@ -181,7 +181,7 @@ Technique to improve heat pump CoP by evaporating part of the refrigerant conden
 **Emitter:** Radiator and/or under floor heating system
 
 **Heat Meter: Device for measuring heat pump energy production.**<br>
-Consists of a precision flowmeter in the circulation fluid and temperature sensors in the heat pump flow and return piping, and calculates heat flow from Q = M * Cp * °T (Typically pre-programmed for water, so recalibration needed for glycol solution due to differing Cp and  values.)
+Consists of a precision flowmeter in the circulation fluid and temperature sensors in the heat pump flow and return piping, and calculates heat flow from Q = M &times; Cp &times; °T (Typically pre-programmed for water, so recalibration needed for glycol solution due to differing Cp and °T values.)
 
 **Heat pump: ASHP or GSHP or WSHP**<br>
 Device that uses electrical energy to drive a refrigeration cycle, thus transferring  heat from a cold source (ambient air, ground, water) to a warm sink (living space) in winter for space heating, and in some designs, the reverse in summer for space cooling.
@@ -251,7 +251,7 @@ Typically, radiators in house sections (e.g. upstairs/downstairs) or UFH.
 - For plate exchangers, height x width x no. of plates.
 
 **Cp: (Isobaric) specific heat of a substance (kJ/kg/°C)**<br>
-Used to calculate fluid heat flow where there is no change of phase. Basic equation Q = M * Cp * °T (consistent units)
+Used to calculate fluid heat flow where there is no change of phase. Basic equation Q = M &times; Cp &times; °T (consistent units)
 
 **H: Enthalpy (kJ/kg)**<br>
 Heat content of a fluid.
@@ -267,7 +267,7 @@ Measure of the irreversibility of a process.
 
 **U: Overall heat transfer coefficient (W/m2/°C or kW/m2/°C)**<br>
 Used to predict heat exchanger performance.
-Basic equation Q = U * A * °tm (Fourier’s Law).
+Basic equation Q = U &times; A &times; °tm (Fourier’s Law).
 
 **V or v: Volumetric flow rate (dm3/s or l/min or m3/h)**<br>
 By convention, capitalised for hot side, lower case for cold side.
