@@ -1,5 +1,7 @@
 # Terminology
 
+*Author: [Sarah Hanson](https://community.openenergymonitor.org/u/sarahh/summary)*
+
 ## Abbreviations
 
 **ABV: Automatic bleed valve**<br>
