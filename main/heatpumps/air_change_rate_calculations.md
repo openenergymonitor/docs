@@ -55,7 +55,7 @@ Ideally, ventilation for air quality should be demand-led. An airtight building 
 
 ## EN12831:2017
 
-The MCS heat pump standard states that heat loss calculations should be done in accordance with EN 12831:2017. Crucially this standard details both a simplified and a more comprehensive 'standard' calculation method. It is worthwhile reading if you want a deeper understanding of this often referenced document. 
+The MCS heat pump standard states that heat loss calculations *shall* be done in accordance with EN 12831:2017. Crucially this standard details both a simplified and a more comprehensive 'standard' calculation method. It is worthwhile reading if you want a deeper understanding of this often referenced document. 
 
 **Tip:** Given the importance of this standard it should arguably be provided free of charge by MCS or another suitable body. It is however possible to buy the standard for a more reasonable amount from the [Estonian Centre for Standardisation and Accreditation](https://www.evs.ee/en/evs-en-12831-1-2017).
 
@@ -194,3 +194,4 @@ The shelter factor equation and the wind factor equations as used in SAP 2012 ar
 ## Summary
 
 All four calculation approaches (Part F, EN 12831, SAP 2012 & HEM) provide whole house air change rate values for the example house that agree well with CO2 monitoring results and real world monitored heat loss. This helps provide a stronger case and calculation approach when deviating from the CIBSE pre-2000 default values.
+
