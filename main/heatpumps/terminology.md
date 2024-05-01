@@ -106,6 +106,7 @@ Spring-loaded valve which responds to an instrument signal to control a process 
 
 **PWM: Pulse width modulation**<br>
 A method for electrical load control by voltage-chopping the power supply at varying time intervals. Often used to control circulation pump speed in order to obtain a desired flow T across a heat pump condenser.
+
 **R125: Refrigerant 125**<br>
 Pentafluoroethane, C2HF5.
 
