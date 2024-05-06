@@ -34,7 +34,12 @@ There are 3 types of Radio Format in use;
 
 \*5 needs selection of correct hardware (e.g. including RFM69) and firmware
 
-\*6 see [https://community.openenergymonitor.org/t/the-emonpicm/18173/15](https://community.openenergymonitor.org/t/the-emonpicm/18173/15) onwards
+\*6  GLCD RFM69 native packet format firmware is here:
+[https://github.com/alandpearson/EmonGLCD/tree/master/firmware/SolarPV_rfm69]
+Also see:
+[https://community.openenergymonitor.org/t/the-emonpicm/18173/15](https://community.openenergymonitor.org/t/the-emonpicm/18173/15) onwards
+
+
 
 \*7 The RFM69Pi module has all three formats available at [https://docs.openenergymonitor.org/emonbase/rfm69-pi.html](https://docs.openenergymonitor.org/emonbase/rfm69-pi.html) It can also be programmed from the emomSD software update page.
 
