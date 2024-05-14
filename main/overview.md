@@ -2,7 +2,7 @@
 
 The OpenEnergyMonitor system has the capability to monitor electrical energy use / generation, temperature and humidity.
 
-The system is made up of four main units. These can be configured to work for a variety of applications. The system is fully open-source, both hardware and software. All hardware is based on the [Arduino](http://www.arduino.cc/) and [Raspberry Pi](http://raspberrypi.org) platforms.
+The units below can be configured to work for a variety of applications. The system is fully open-source, both hardware and software. All hardware is based on the [Arduino](http://www.arduino.cc/) and [Raspberry Pi](http://raspberrypi.org) platforms.
 
 % ![image](img/oemfpsystemdiagram.png)
 
@@ -15,14 +15,14 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :align: left
 ```
 
-**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi.<br><br>
+**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi. Hosts the emonCMS software for full local data logging and visualisation capability.<br><br>
 
 ```{image} img/emontx5-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx5 (available soon):** A 6x channel electricity monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase.<br><br>
+**emonTx5 (available soon):** A 6x channel electricity monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.<br><br>
 
 ```{image} img/emontx4-min.png
 :width: 50px
@@ -33,11 +33,18 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 
 ---
 
+```{image} img/emonth-min.png
+:width: 50px
+:align: left
+```
+**emonTH2:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.
+<br><br>
+
 ```{image} img/emonbase-min.png
 :width: 50px
 :align: left
 ```
-**emonBase:** A Raspberry Pi base-station that receives data sent from RFM69 radio nodes. Hosts the emonCMS software for full local data logging and visualisation capability.
+**emonBase:** A Raspberry Pi base-station that receives data sent from an emonTx4/5 and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building. Hosts the emonCMS software for full local data logging and visualisation capability.
 <br><br>
 
 ```{image} img/emoncms-min.png
@@ -58,7 +65,7 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :width: 50px
 :align: left
 ```
-**emonVs v1.3.2:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi2 via RJ45.<br><br>
+**emonVs:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi2 and emonTx5 via RJ45.<br><br>
 <br><br>
 
 ---
@@ -109,13 +116,6 @@ Invisible section: Contains source code for the image above using https://playgr
 :align: left
 ```
 **emonTx V3.4:** A 4 circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase or emonPi. It can also send data via an ESP8266 WiFi adapter or directly by a serial connection.<br><br>
-
-```{image} img/emonth-min.png
-:width: 50px
-:align: left
-```
-**emonTH:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.
-<br><br>
 
 ```{image} img/voltagesensor.png
 :width: 50px
