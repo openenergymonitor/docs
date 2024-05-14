@@ -10,14 +10,14 @@ The system is made up of four main units. These can be configured to work for a 
 
 The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
 
-```{image} img/emonpi-min.png
+```{image} img/emonpi2-min.png
 :width: 50px
 :align: left
 ```
 
 **emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi.<br><br>
 
-```{image} img/emontx4-min.png
+```{image} img/emontx5-min.png
 :width: 50px
 :align: left
 ```
