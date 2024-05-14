@@ -29,7 +29,7 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :align: left
 ```
 
-**emonTx4:** The original 6x circuit AVR-DB energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
+**emonTx4:** The original 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
 
 ---
 
