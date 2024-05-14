@@ -16,11 +16,11 @@ Welcome to the OpenEnergyMonitor guide!
 .. toctree::
    :maxdepth: 2
    :caption: Hardware:
-   
+
+   emonPi2 <emonpi2/index>
    emonTx4 <emontx4/index>
    emonTx3 <emontx3/index>
    emonTH2 <emonth2/index>
-   emonPi2 <emonpi2/index>
    emonPi <emonpi/index>
    emonBase <emonbase/index> 
    EmonEVSE <emonevse/index>
