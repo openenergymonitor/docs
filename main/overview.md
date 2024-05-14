@@ -8,31 +8,30 @@ The system is made up of four main units. These can be configured to work for a 
 
 <p><b>Current system</b></p>
 
-```{image} img/emonVs-min.png
-:width: 50px
-:align: left
-```
-**emonVs v1.3.2:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi2 via RJ45.<br><br>
+The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure.
 
 ```{image} img/emonpi-min.png
 :width: 50px
 :align: left
 ```
-**emonPi2 v2.0.1:**<br>A 6x circuit energy monitor with an integrated Raspberry Pi in the same enclosure, Single phase and three phase support. Real/Active power measurement, temperature sensing and radio transreceiver. The emonPi2 is part of the same AVR-DB hardware family as the original emonTx4 and updated emonTx5.<br><br>
+
+**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi.<br><br>
 
 ```{image} img/emontx4-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx v5 (available soon):** A 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase. The emonTx5 is part of the same AVR-DB hardware family as the emonTx4 and emonPi2, it uses the same measurement board as the emonPi2 to provide the same functionality as the emonTx4, streamlining manufacturing.<br><br>
+**emonTx5 (available soon):** A 6x channel electricity monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase.<br><br>
 
 ```{image} img/emontx4-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx v4:** The original 6x circuit AVR-DB energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware. The emonTx5 is effectively a relatively minor update to the emonTx4.<br><br>
+**emonTx4:** The original 6x circuit AVR-DB energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
+
+---
 
 ```{image} img/emonbase-min.png
 :width: 50px
@@ -41,6 +40,13 @@ The system is made up of four main units. These can be configured to work for a 
 **emonBase:** A Raspberry Pi base-station that receives data sent from RFM69 radio nodes. Hosts the emonCMS software for full local data logging and visualisation capability.
 <br><br>
 
+```{image} img/emoncms-min.png
+:width: 50px
+:align: left
+```
+**emonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi and emonBase, also available remotely via emoncms.org.
+<br>
+
 ```{image} img/ctsensor.png
 :width: 50px
 :align: left
@@ -48,12 +54,12 @@ The system is made up of four main units. These can be configured to work for a 
 **CT sensor:** Current transformer. Used for measuring AC current. We use a non-invasive clip-on sensor for ease of installation and safety.
 <br><br>
 
-```{image} img/emoncms-min.png
+```{image} img/emonVs-min.png
 :width: 50px
 :align: left
 ```
-**emonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi and emonBase, also available remotely via emoncms.org.
-<br>
+**emonVs v1.3.2:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi2 via RJ45.<br><br>
+<br><br>
 
 ---
 
