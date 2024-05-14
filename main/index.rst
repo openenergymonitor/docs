@@ -12,17 +12,28 @@ Welcome to the OpenEnergyMonitor guide!
    System Overview <overview.md>
    Resources <resources.md>
    Troubleshooting <troubleshooting.md>
-   
+  
 .. toctree::
    :maxdepth: 2
-   :caption: Hardware:
+   :caption: Main System:
 
    emonPi2 <emonpi2/index>
    emonTx4 <emontx4/index>
-   emonTx3 <emontx3/index>
    emonTH2 <emonth2/index>
-   emonPi <emonpi/index>
    emonBase <emonbase/index> 
+
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Older Hardware:
+
+   emonTx3 <emontx3/index>
+   emonPi1 <emonpi/index>
+   
+.. toctree::
+   :maxdepth: 2
+   :caption: Integrations
+
    EmonEVSE <emonevse/index>
    
 .. toctree::
