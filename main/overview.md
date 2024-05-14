@@ -15,7 +15,7 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :align: left
 ```
 
-**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi. Hosts the emonCMS software for full local data logging and visualisation capability.<br><br>
+**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi. Hosts the emonCMS software for local data logging and visualisation.<br><br>
 
 ```{image} img/emontx5-min.png
 :width: 50px
@@ -44,7 +44,7 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :width: 50px
 :align: left
 ```
-**emonBase:** A Raspberry Pi base-station that receives data sent from an emonTx4/5 and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building. Hosts the emonCMS software for full local data logging and visualisation capability.
+**emonBase:** A Raspberry Pi base-station that receives data sent from an emonTx4/5 and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building. Hosts the emonCMS software for local data logging and visualisation.
 <br><br>
 
 ```{image} img/emoncms-min.png
