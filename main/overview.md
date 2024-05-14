@@ -18,7 +18,28 @@ The system is made up of four main units. These can be configured to work for a 
 :width: 50px
 :align: left
 ```
-**emonPi2 v2.0.1:**<br>A Raspberry Pi shield offering 6x clip-on CT current sensor inputs, Real/Active power measurement, temperature sensing and radio transreceiver.<br><br>
+**emonPi2 v2.0.1:**<br>A 6x circuit energy monitor with an integrated Raspberry Pi in the same enclosure, Single phase and three phase support. Real/Active power measurement, temperature sensing and radio transreceiver. The emonPi2 is part of the same AVR-DB hardware family as the original emonTx4 and updated emonTx5.<br><br>
+
+```{image} img/emontx4-min.png
+:width: 50px
+:align: left
+```
+
+**emonTx v5 (available soon):** A 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase. The emonTx5 is part of the same AVR-DB hardware family as the emonTx4 and emonPi2, it uses the same measurement board as the emonPi2 to provide the same functionality as the emonTx4, streamlining manufacturing.<br><br>
+
+```{image} img/emontx4-min.png
+:width: 50px
+:align: left
+```
+
+**emonTx v4:** The original 6x circuit AVR-DB energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware. The emonTx5 is effectively a relatively minor update to the emonTx4.<br><br>
+
+```{image} img/emonbase-min.png
+:width: 50px
+:align: left
+```
+**emonBase:** A Raspberry Pi base-station that receives data sent from RFM69 radio nodes. Hosts the emonCMS software for full local data logging and visualisation capability.
+<br><br>
 
 ```{image} img/ctsensor.png
 :width: 50px
@@ -70,20 +91,6 @@ Invisible section: Contains source code for the image above using https://playgr
 ---
 
 <p><b>Earlier hardware</b></p>
-
-```{image} img/emontx4-min.png
-:width: 50px
-:align: left
-```
-
-**emonTx v4:** A 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase. It can also send data via a Wi-Fi extension board or directly via USB.<br><br>
-
-```{image} img/emonbase-min.png
-:width: 50px
-:align: left
-```
-**emonBase:** A Raspberry Pi base-station that receives data sent from the emonTx4. Hosts the emonCMS software for full local data logging and visualisation capability. With new direct SPI RFM69 radio transceiver.
-<br><br>
 
 ```{image} img/emonpi-min.png
 :width: 50px
