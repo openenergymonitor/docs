@@ -18,6 +18,7 @@ Welcome to the OpenEnergyMonitor guide!
    :caption: Main System:
 
    emonPi2 <emonpi2/index>
+   emonTx5 <emontx5/index>
    emonTx4 <emontx4/index>
    emonTH2 <emonth2/index>
    emonBase <emonbase/index> 

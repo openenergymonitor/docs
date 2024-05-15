@@ -1,4 +1,5 @@
 find main -maxdepth 1 -type l -delete
+ln -s ../emontx5/docs main/emontx5
 ln -s ../emontx4/docs main/emontx4
 ln -s ../emonpi2/docs main/emonpi2
 ln -s ../emontx3/docs main/emontx3
