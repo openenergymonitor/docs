@@ -21,7 +21,7 @@ See: [http://www.sphinx-doc.org/en/master/usage/installation.html](http://www.sp
 
 ### 4. Install Plugins
 
-    pip3 install m2r myst-parser
+    pip3 install m2r myst-parser sphinx_copybutton
 
 ### 5. Build the docs
 
