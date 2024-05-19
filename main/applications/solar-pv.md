@@ -1,4 +1,4 @@
-<a class="btn" href="https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emontx-v4/">Buy in Shop</a>
+<a class="btn" href="https://shop.openenergymonitor.com/energy-monitoring/">Buy in Shop</a>
 
 # Solar PV
 
@@ -23,24 +23,11 @@ Emoncms and My Solar are pre-installed on the emonBase/emonPi base-station and c
 
 ## 1. Hardware
 
-**emonTx4**<br>
-Our latest energy monitoring unit is called the emonTx4. With 6x clip-on CT sensor channels it can be used to monitor the main supply, solar generation and several other circuits in a house. 
+Please follow the hardware installation guides here to get started:
 
-The emonTx4 also measures voltage using the emonVs precision voltage sensor and power supply. Voltage sensing ensures accurate measurement of active power, which is what is usually billed for.
+- [emonPi2](../emonpi2/install.md)
+- [emonTx4](../emontx4/emontx4_emonbase_install.md)
 
-For a more detailed overview of the emonTx4, please see: [EmonTx4: Overview](../emontx4/overview.md).
-
-The emonTx4 can be used in two configurations: 
-
-1\. The emonTx4 transmits it's measurement data via a 433 MHz radio link to an emonBase base-station, which is then either connected to the local network via WiFi or Ethernet. This provides full local data logging and visualisation capability - as well as the option to forward the data to a remote server. For more information, please see:
-
-- [emonTx4, emonVs & emonBase installation guide](../emontx4/emontx4_emonbase_install.md)
-- [emonTx4 shop item](https://shop.openenergymonitor.com/6-channel-energy-monitoring-emontx-v4)
-
-2\. The emonTx4 can alternatively used in stand-alone mode with a WiFi adapter board. This is more suited for data logging on a remote server such as our [emoncms.org](https://emoncms.org) service. For more information, please see:
-
-- [emonTx4 ESP8266 Wi-Fi Expansion Board](https://docs.openenergymonitor.org/emontx4/expansion_boards.html#adafruit-esp8266-huzzah-wi-fi-expansion-board)
-- [emonTx4 WiFi shop item](https://shop.openenergymonitor.com/emontx-v4-with-onboard-wifi/)
 
 ## 2. Sensor Installation
 
