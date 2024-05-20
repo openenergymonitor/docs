@@ -39,8 +39,6 @@ The units below can be configured to work for a variety of applications. The sys
 The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
 
 
----
-
 ```{image} img/emonth-min.png
 :width: 50px
 :align: left
@@ -78,6 +76,29 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 
 ---
 
+<p><b>Earlier hardware</b></p>
+
+```{image} img/emonpi-min.png
+:width: 50px
+:align: left
+```
+**emonPi:** An all in one 2 circuit energy monitor and base-station which collects data, hosts the emonCMS software and can also receive data from other sensor nodes.<br><br>
+
+```{image} img/emontx-min.png
+:width: 50px
+:align: left
+```
+**emonTx V3.4:** A 4 circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase or emonPi. It can also send data via an ESP8266 WiFi adapter or directly by a serial connection.<br><br>
+
+```{image} img/voltagesensor.png
+:width: 50px
+:align: left
+```
+**ACAC Voltage sensor:** An AC-AC Voltage adapter, used for measuring AC Voltage safely. Used in conjunction with the AC current measurement to calculate power consumption accurately.
+<br><br>
+
+---
+
 <p><b>Timeline</b></p>
 
 Open Energy Monitor has developed and evolved different hardware solutions overtime:
@@ -108,29 +129,6 @@ Invisible section: Contains source code for the image above using https://playgr
     "Summer 2024": "emonTx5"
     "2025": "emonPi3 & emonTx6" 
 -->
-
----
-
-<p><b>Earlier hardware</b></p>
-
-```{image} img/emonpi-min.png
-:width: 50px
-:align: left
-```
-**emonPi:** An all in one 2 circuit energy monitor and base-station which collects data, hosts the emonCMS software and can also receive data from other sensor nodes.<br><br>
-
-```{image} img/emontx-min.png
-:width: 50px
-:align: left
-```
-**emonTx V3.4:** A 4 circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio to an emonBase or emonPi. It can also send data via an ESP8266 WiFi adapter or directly by a serial connection.<br><br>
-
-```{image} img/voltagesensor.png
-:width: 50px
-:align: left
-```
-**ACAC Voltage sensor:** An AC-AC Voltage adapter, used for measuring AC Voltage safely. Used in conjunction with the AC current measurement to calculate power consumption accurately.
-<br><br>
 
 ---
 
