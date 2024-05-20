@@ -2,12 +2,26 @@
 
 A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Software
 
+**emonPi2**
+
+  - [Documentation](emonpi2/index.md)
+  - [Github repository](https://github.com/openenergymonitor/emonpi2)
+  - [Hardware files](https://github.com/openenergymonitor/emonpi2/tree/main/hardware)
+  - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
+  
+**emonTx5**
+
+  - [Documentation](emontx5/index.md)
+  - [Github repository](https://github.com/openenergymonitor/emontx5)
+  - [Hardware files (same as emonPi2)](https://github.com/openenergymonitor/emonpi2/tree/main/hardware)
+  - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
+
 **emonTx4**
 
   - [Documentation](emontx4/index.md)
   - [Github repository](https://github.com/openenergymonitor/emontx4)
   - [Hardware files](https://github.com/openenergymonitor/emontx4/tree/main/hardware)
-  - [Firmware](https://github.com/openenergymonitor/emontx4/tree/main/firmware)
+  - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
   
 **emonVs**
 
