@@ -1,6 +1,6 @@
 # System Overview
 
-The OpenEnergyMonitor system has the capability to monitor electrical energy use / generation, temperature and humidity.
+The OpenEnergyMonitor system has the capability to monitor electrical energy use / generation, temperature and humidity. It can also integrate with M-BUS and Modbus heat meters and other electricity meters for heat pump monitoring.
 
 The units below can be configured to work for a variety of applications. The system is fully open-source, both hardware and software. All hardware is based on the [Arduino](http://www.arduino.cc/) and [Raspberry Pi](http://raspberrypi.org) platforms.
 
@@ -13,23 +13,30 @@ The units below can be configured to work for a variety of applications. The sys
 :align: left
 ```
 
-**emonPi2:**<br>A 6x channel electricity monitor with an integrated Raspberry Pi in the same enclosure. Temperature sensing and RFM69 433 Mhz radio receiver handled directly by the Raspberry Pi. Hosts the emonCMS software for local data logging and visualisation.<br><br>
+**emonPi2:**<br>A 6 channel* electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station to receive data from further 433Mhz RF nodes. Full local or remote data logging and visualisation capability via EmonCMS.<br><br>
 
 ```{image} img/emontx5-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx5 (available soon):** A 6x channel electricity monitoring node. Transmits data via an inbuilt 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.<br><br>
+**emonTx5 (available soon):** A 6 channel* electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.<br><br>
 
 ```{image} img/emontx4-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx4:** The original 6x circuit energy monitoring node. Transmits data via an inbuilt 433MHz radio. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
+**emonTx4:** The original 6 channel* energy monitoring node. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
 
 The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
+
+```{image} img/ctsensor.png
+:width: 50px
+:align: left
+```
+\***Expand to 12 CT channels:** Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only), emonTx5 or emonTx4 to monitor up to 12 circuits with an optional expansion board. 
+<br><br>
 
 ---
 
