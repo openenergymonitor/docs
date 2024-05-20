@@ -13,7 +13,7 @@ The units below can be configured to work for a variety of applications. The sys
 :align: left
 ```
 
-**emonPi2:**<br>A 6 channel* electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station to receive data from further 433Mhz RF nodes. Full local or remote data logging and visualisation capability via EmonCMS.<br><br>
+**emonPi2:**<br>A 6 channel* electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station to receive data from further 433Mhz radio nodes. Full local or remote data logging and visualisation capability via EmonCMS.<br><br>
 
 ```{image} img/emontx5-min.png
 :width: 50px
@@ -29,14 +29,15 @@ The units below can be configured to work for a variety of applications. The sys
 
 **emonTx4:** The original 6 channel* energy monitoring node. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
 
-The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
-
 ```{image} img/ctsensor.png
 :width: 50px
 :align: left
 ```
 \***Expand to 12 CT channels:** Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only), emonTx5 or emonTx4 to monitor up to 12 circuits with an optional expansion board. 
 <br><br>
+
+The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
+
 
 ---
 
