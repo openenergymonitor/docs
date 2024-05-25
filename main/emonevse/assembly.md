@@ -162,7 +162,7 @@ The EVSE should be installed by a competent electrician in accordance with BS767
 The EVSE requires:
  
 - Dedicated circuit 
-- RCD: duel-pole **Type-B RCD with 6mA DC leakage protection** e.g [Chint NL210](https://shop.openenergymonitor.com/type-b-rcd-1p-n-chint-nl210-63-263-30/
+- RCD: dual-pole **Type-B RCD with 6mA DC leakage protection** e.g [Chint NL210](https://shop.openenergymonitor.com/type-b-rcd-1p-n-chint-nl210-63-263-30/
 ), Proteus 63/2/30B 
       
 - MCB: **32A Curve B MCB** overcurrent protection (40A MCB can be used providing disconnecting time requirements are met) 
