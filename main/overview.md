@@ -6,9 +6,9 @@ The units below can be configured to work for a variety of applications. The sys
 
 % ![image](img/oemfpsystemdiagram.png)
 
-<p><b>Current system</b></p>
+**Current system** 
 
-## Introducing the emonPi2
+**Introducing the emonPi2**
 
 A 6 channel electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station for further sensor nodes. Full local or remote data logging and visualisation capability via EmonCMS. 
 
