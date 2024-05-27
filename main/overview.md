@@ -8,19 +8,53 @@ The units below can be configured to work for a variety of applications. The sys
 
 <p><b>Current system</b></p>
 
-```{image} img/emonpi2-min.png
+## Introducing the emonPi2
+
+A 6 channel electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station for further sensor nodes. Full local or remote data logging and visualisation capability via EmonCMS. 
+
+![emonPi2_complete_kit__77966.jpg](img/emonPi2_complete_kit__77966.jpg)
+
+**Expand your system with:**
+
+```{image} img/ctsensor.png
 :width: 50px
 :align: left
 ```
-
-**emonPi2:**<br>A 6 channel* electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station to receive data from further 433Mhz radio nodes. Full local or remote data logging and visualisation capability via EmonCMS.<br><br>
+**Expand the emonPi2 to 12 CT channels:** Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only).<br><br>
 
 ```{image} img/emontx5-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx5 (available soon):** A 6 channel* electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.<br><br>
+**emonTx5:** A 6 channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building. Expand the emonTx5 to 12 CT channels with an optional expansion board.<br><br>
+
+```{image} img/emonth-min.png
+:width: 50px
+:align: left
+```
+**emonTH2:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.<br><br>
+
+```{image} img/heatmeter-min.png
+:width: 50px
+:align: left
+```
+**Heat metering:** Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle and the [heatpumpmonitor.org](https://heatpumpmonitor.org/) initiative.<br><br>
+
+```{image} img/emonbase-min.png
+:width: 50px
+:align: left
+```
+**emonBase:** A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.<br><br>
+
+```{image} img/emoncms-min.png
+:width: 50px
+:align: left
+```
+**emonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi and emonBase, also available remotely via emoncms.org.
+<br><br>
+
+---
 
 ```{image} img/emontx4-min.png
 :width: 50px
@@ -29,36 +63,14 @@ The units below can be configured to work for a variety of applications. The sys
 
 **emonTx4:** The original 6 channel* energy monitoring node. While no longer available in the shop the emonTx4 is still actively supported under the current generation of AVR-DB hardware.<br><br>
 
-```{image} img/ctsensor.png
-:width: 50px
-:align: left
-```
-\***Expand to 12 CT channels:** Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only), emonTx5 or emonTx4 to monitor up to 12 circuits with an optional expansion board. 
-<br><br>
-
+```{tip}
 The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
-
-
-```{image} img/emonth-min.png
-:width: 50px
-:align: left
 ```
-**emonTH2:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.
-<br><br>
 
-```{image} img/emonbase-min.png
-:width: 50px
-:align: left
-```
-**emonBase:** A Raspberry Pi base-station that receives data sent from an emonTx4/5 and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building. Hosts the emonCMS software for local data logging and visualisation.
-<br><br>
+---
 
-```{image} img/emoncms-min.png
-:width: 50px
-:align: left
-```
-**emonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi and emonBase, also available remotely via emoncms.org.
-<br>
+**Sensors:**
+
 
 ```{image} img/ctsensor.png
 :width: 50px
