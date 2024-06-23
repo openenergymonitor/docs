@@ -1,4 +1,4 @@
-<a class="btn" href="https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle-emonhp/">Buy in Shop</a>
+<a class="btn" href="https://shop.openenergymonitor.com/heat-pump-monitoring/">Buy in Shop</a>
 
 # Heat Pump Monitoring
 
@@ -7,6 +7,7 @@
 The OpenEnergyMonitor system can be used to monitor the performance of heat pumps. The following covers a number of different configurations of the system from basic to more advanced monitoring.
 
 - [**Purchase Level 3 Heat Pump Monitoring Bundle**](https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle/)
+- [**Purchase Level 2 Heat Pump Monitoring Bundle**](https://shop.openenergymonitor.com/level-2-heat-pump-monitoring-bundle-no-cop/)
 
 ## Heat Pump Monitoring Data Comparison Website 
 
@@ -43,6 +44,8 @@ It is also possible to measure the electricity consumption with modbus electrici
 
 ## Level 2 (no COP): System temperatures:
 
+- [**Purchase Level 2 Heat Pump Monitoring Bundle**](https://shop.openenergymonitor.com/level-2-heat-pump-monitoring-bundle-no-cop/)
+  
 Since the performance of a heat pump is greatly affected by the working temperatures, it is very useful to monitor the following system temperatures:
 
 1. The water flow and return temperature from the heat pump unit.
