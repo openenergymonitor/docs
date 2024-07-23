@@ -47,7 +47,9 @@ Many libraries are required, this is the full list:
 
 | Library            | Link                                                               | Notes |
 |--------------------|--------------------------------------------------------------------|-------|
-| JeeLib             | https://github.com/jcw/jeelib                                      |       |
+| JeeLib             | https://github.com/openenergymonitor/RFM69_JeeLib                                     |       |
+| emonLibDB          | https://community.openenergymonitor.org/t/emonlibdb-version-1-0-2/23535                                                                   |       |
+| LowPowerLabs       |   https://github.com/openenergymonitor/emonLibDB                   |       |
 | RFu_JeeLib         | https://github.com/openenergymonitor/RFu_jeelib                    | Only required for emonTx V3.2 and emonTH V1.4 using the RFu328 module.    |
 | EmonLib            | https://github.com/openenergymonitor/EmonLib                       |       |
 | OneWire            | https://github.com/PaulStoffregen/OneWire                          |       |
