@@ -46,11 +46,7 @@ The above guidance was written by OpenEnergyMonitor in collaboration with [Heat 
 
 We’d love to hear from you! If you have any suggestions, tips, or feedback on the best methods for removing air from heating systems, please reach out.
 
-### Contact
-
-- **Phone / WhatsApp:** 01286 800870
-- **Email:** [support@openenergymonitor.zendesk.com](mailto:support@openenergymonitor.zendesk.com)
-- **Forum:** [community.openenergymonitor.org](https://community.openenergymonitor.org)
+***
 
 [1]: On a Vaillant Arothem+ the purge cycle setting is available on the VWZ AI controller under settings: `Installer Level (code 17) > Test Menu > Check Programmes > P.06 Purge Building Circuit`.
 
