@@ -1,6 +1,6 @@
 # Removing Air from Heating Systems
 
-Effectively removing trapped and dissolved air from a sealed heating system is crucial for ensuring the system's efficiency, the accurate functioning of heat meters, and its longevity.
+Removing trapped and dissolved air from a sealed heating system is essential for maintaining efficiency, ensuring accurate heat meter readings, and prolonging the system's lifespan by minimizing corrosion.
 
 ## During Design / Installation
 
