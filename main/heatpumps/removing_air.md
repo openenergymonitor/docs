@@ -1,6 +1,13 @@
 # Removing Air from Heating Systems
 
-Removing trapped and dissolved air from a sealed heating system is essential for maintaining efficiency, ensuring accurate heat meter readings, and prolonging the system's lifespan by minimizing corrosion.
+*Removing trapped and dissolved air from a sealed heating system is essential for maintaining efficiency, ensuring accurate heat meter readings, and prolonging the system's lifespan by minimizing corrosion.*
+
+Ultrasonic heat meters, such as Kamstrup, Axioma, and Sharky, are unable to measure flow rates accurately if there is air in the system. This can cause the flow rate to be reported as zero, resulting in the heat meter showing no heat being measured. This issue is most likely to occur towards the end of a Domestic Hot Water (DHW) cycle when the flow temperature is highest:
+
+![trapped air](img/missing-heat.png)
+
+Sontex heat meters, on the other hand, use a different flow measurement principle. While they do not produce an error or stop reporting in the same way as ultrasonic meters, they may quietly underreport if air is present. Additionally, Sontex heat meters are susceptible to dirt accumulation and may gradually underreport over time if they become clogged with debris.
+
 
 ## During Design / Installation
 
