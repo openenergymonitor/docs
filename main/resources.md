@@ -69,7 +69,7 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **emonTH V1**
 
-  - [User Guide](https://docs.openenergymonitor.org/emonth2/index.html)
+  - [User Guide](https://github.com/openenergymonitor/emonTH/blob/master/README.md)
   - [Hardware & Firmware](https://github.com/openenergymonitor/emonth)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonth)
 
