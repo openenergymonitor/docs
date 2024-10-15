@@ -10,7 +10,7 @@ OpenEnergyMonitor has collaborated with OpenEVSE to improve energy monitoring in
 
 ## Assembly
 
-**This build guide is for OpenEVSE kits purchased via the [OpenEnergyMonitor Shop](https://shop.openenergymonitor.com/evse/).**
+**This build guide is for OpenEVSE kits purchased via the [OpenEVSE Shop](https://store.openevse.com/collections/all-products).**
 
 ```{image} img/ev-charging/evse-build/evse-build-0.png.jpg
 :width: 100%
