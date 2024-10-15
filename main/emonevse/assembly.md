@@ -1,6 +1,6 @@
 # OpenEVSE Kit Build Guide
 
-OpenEVSE is a fully open-source EVSE (Electric Vehicle Supply Equipment) charging station designed by [OpenEVSE](http://openevse.com) and re-sold in the [OpenEnergyMonitor Shop](https://shop.openenergymonitor.com/evse/).
+OpenEVSE is a fully open-source EVSE (Electric Vehicle Supply Equipment) charging station designed by [OpenEVSE](http://openevse.com) and sold in the [OpenEVSE Shop](https://store.openevse.com/collections/all-products).
 
 ![Nissan LEAF OpenEVSE](img/openevse-banner.png)
 
