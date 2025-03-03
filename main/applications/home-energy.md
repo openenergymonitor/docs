@@ -15,7 +15,7 @@ The OpenEnergyMonitor system can be used as a simple home energy monitoring syst
 Please follow the hardware installation guides here to get started:
 
 - [emonPi2](../emonpi2/install.md)
-- [emonTx4](../emontx4/emontx4_emonbase_install.md)
+- [emonTx5](../emontx5/install.md)
 
 ## 2. Emoncms Feed Setup
 
