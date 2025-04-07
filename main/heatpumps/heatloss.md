@@ -44,11 +44,13 @@ The most challenging room temperature target for system design is often the bath
 
 ## 4\. Select Room Air Change Rates
 
-This is one of the most important, yet often overlooked, factor in heat loss calculations. As mentioned above, the current CIBSE guidance for pre-2000 air change rates suggests values significantly higher than those likely in reality, resulting in widespread overestimates of building heat loss.
+This is one of the most important, yet often overlooked, factor in heat loss calculations. As mentioned above, the current CIBSE Domestic Heating Design Guide (DHDG) guidance for pre-2000 air change rates suggests values significantly higher than those likely in reality, resulting in widespread overestimates of building heat loss.
+
+**Note:** Up until December 2024 the Excel MCS heat loss calculator also used the calculation method from the Domestic Heating Design Guide but this has now been replaced with a new online heat load calculator that implements the full EN12831 ventilation heat loss calculation. [This effectively halves ventilation heat loss in pre-2000 naturally ventilated buildings](https://docs.openenergymonitor.org/heatpumps/air_change_rate_calculations.html#en12831-2017), 1.7 ACH becomes around 0.8 ACH. This EN12831 compliant calculation is not widely used in other domestic heat loss tools at the time of writing. 
 
 Mid-terrace house example: 
 
-- Pre-2000 CIBSE guidance (see [Table 3.8 here](https://docs.openenergymonitor.org/heatpumps/air_change_rate_calculations.html)) suggests using an air change rate of 1.5 air changes per hour (ACH) in the living room, 1.0 in bedrooms, 2.0 in the kitchen and hall, and 3.0 in the bathroom. These values would result in an average whole house air change rate of approximately 1.7 ACH for this house.
+- Pre-2000 CIBSE DHDG guidance (see [Table 3.8 here](https://docs.openenergymonitor.org/heatpumps/air_change_rate_calculations.html)) suggests using an air change rate of 1.5 air changes per hour (ACH) in the living room, 1.0 in bedrooms, 2.0 in the kitchen and hall, and 3.0 in the bathroom. These values would result in an average whole house air change rate of approximately 1.7 ACH for this house.
 
 - A blower door test was performed that gave an n50 result of 10.4 ACH @ 50 Pa (without taping up vents). Dividing this by 20 (a rough rule of thumb) gives 0.52 ACH. The SAP 2012 calculation method would modify this slightly to take into account a shelter factor and average January wind speeds, giving a value of 0.65 ACH. The more recent Home Energy Model methodology suggests a slightly higher value of 0.74 ACH. See the more detailed write-up about this here: <b>[Air change rate calculation methods: SAP 2012 & Home Energy Model](https://docs.openenergymonitor.org/heatpumps/air_change_rate_calculations.html#sap-2012)</b>.
 
@@ -105,7 +107,7 @@ If we start with our base heat loss of 3340W from the HeatLoss.js example and ch
 
 - Base heat loss: 3340W (Agrees with measured heat demand)
 - Stone wall U-value: Change from 1.5 W/K.m² to 2.23 W/K.m² = 4078W
-- CIBSE pre-2000 air change rates: Change from 0.6 ACH to pre-2000 CIBSE = 5413W
+- CIBSE DHDG pre-2000 air change rates: Change from 0.6 ACH to pre-2000 CIBSE = 5413W
 - Outside design temperature: Change from -1.4°C to -3.6°C and ground temperature to 10°C = 6001W
 - Unheated neighbours: Change 18°C to 10°C = 7457W
 

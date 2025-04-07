@@ -22,36 +22,11 @@ The guidance given in the [MCS ‘Domestic Heat Pumps: A best practice guide](ht
 
 ![mcs](img/mcs_guidance.png)
 
-The [MCS heat pump heat loss calculator](https://mcscertified.com/mcs-launch-new-improved-heat-pump-calculator/) itself does reference the CIBSE Domestic Heating Design Guide air change rate table directly and is perhaps the main reason these values are used as default input values. 
+Up until December 2024, MCS provided an Excel based heat loss calculator (We have saved a copy of it here: [MCS-Heat-Pump-Calculator-Version-1.10-locked.xlsm](MCS-Heat-Pump-Calculator-Version-1.10-locked.xlsm)) It both references the CIBSE Domestic Heating Design Guide air change rate table directly and uses the simplified calculation approach documented in that guide. This is perhaps the main reason these values and the simplified calculation are still used in heat loss tools to this day.
 
-The following examines alternative approaches to calculating air change rate values, including Part F regulations, the EN12831 standard, SAP2012, and the newer Home Energy Model calculation method. Arguably, air change rates should be an output rather than an input in ventilation calculations, and these approaches provide useful examples of how to do this.
+**In December 2024, MCS published a [new online heat load calculator](https://mcscertified.com/heat-load-calculator/)** that is unfortunately only accessible to registered MCS installers. This tool implements the ventilation calculation from the EN12831 standard which effectively halves ventilation losses for pre-2000 naturally ventilated buildings. 
 
-## Part F regulations
-
-[Part F of the building regulations](https://www.gov.uk/government/publications/ventilation-approved-document-f) addresses ventilation and improving air quality inside buildings. **Section 1.24** specifies minimum whole dwelling ventilation rates. These values are coincidentally quite close to measured ventilation rates in pre-2000 buildings with natural ventilation and/or intermittent extraction. 
-
-![part_f_min_vent_whole.png](img/part_f_min_vent_whole.png)
-
-**Example calculation**
-
-A two story 3 bed house with a floor area of 77m2 and ceiling heights of 2.4m has an internal volume of 185 m3.
-
-a) The minimum of 0.3 litres per second per m2 of internal floor area results in this case to:
-
-    0.3 L/s x 77 m2 = 23.1 L/s
-    23 L/s × 3600s/hr × 0.001  m3/L = 83.2 m3/hr
-    83.2 m3/hr / 185 m3 = 0.45 air changes per hour (ACH)
-
-b) The minimum rate determined by the number of bedrooms is higher at 31 L/s:
-
-    31 L/s × 3600s/hr × 0.001  m3/L = 111.6 m3/hr
-    111.6 m3/hr / 185 m3 = 0.6 air changes per hour (ACH)
-
-This gives us a useful guide for minimum ventilation rates from an air quality perspective which is an important factor for whole house system design.
-
-Part F building regulations also stipulate minimum ventilation rates for intermittent and continuous extract ventilation. Except for intermittent extraction in kitchens without cooker hoods, these rates are typically lower than the whole-house ventilation rate.
-
-Ideally, ventilation for air quality should be demand-led. An airtight building with controlled ventilation, when actively used and understood by occupants, will provide better air quality and more control over ventilation heat loss compared to buildings that rely on natural ventilation. The latter may under-ventilate in calm weather and over-ventilate in very windy conditions.
+The following examines the EN12831 standard and alternative approaches to calculating air change rate values, including Part F regulations, SAP2012, and the newer Home Energy Model calculation method. Arguably, air change rates should be an output rather than an input in ventilation calculations, and these approaches provide useful examples of how to do this.
 
 ## EN12831:2017
 
@@ -104,6 +79,34 @@ The following spreadsheet example implement the standard method as closely as po
 **Download:** [EN12831_2017_ventilation_calculation.ods](img/EN12831_2017_ventilation_calculation.ods)
 
 The example given is of Trystan Lea's mid-terrace solid stone house. It uses the measured blower door test air permeability result of 8.9 m3/h/m2 (corrected up to 9.5 m3/h/m2 as blower door test noted envelope area must have used external dimensions). This is the result **without** taping up the extract vents and the stove. Assuming natural ventilation it suggest a whole house air change rate of 0.6 ACH (with individual rooms at 1.1 ACH). This whole house air change rate agrees well with CO2 monitoring derived results and coincidentally the part F minimum.
+
+
+## Part F regulations
+
+[Part F of the building regulations](https://www.gov.uk/government/publications/ventilation-approved-document-f) addresses ventilation and improving air quality inside buildings. **Section 1.24** specifies minimum whole dwelling ventilation rates. These values are coincidentally quite close to measured ventilation rates in pre-2000 buildings with natural ventilation and/or intermittent extraction. 
+
+![part_f_min_vent_whole.png](img/part_f_min_vent_whole.png)
+
+**Example calculation**
+
+A two story 3 bed house with a floor area of 77m2 and ceiling heights of 2.4m has an internal volume of 185 m3.
+
+a) The minimum of 0.3 litres per second per m2 of internal floor area results in this case to:
+
+    0.3 L/s x 77 m2 = 23.1 L/s
+    23 L/s × 3600s/hr × 0.001  m3/L = 83.2 m3/hr
+    83.2 m3/hr / 185 m3 = 0.45 air changes per hour (ACH)
+
+b) The minimum rate determined by the number of bedrooms is higher at 31 L/s:
+
+    31 L/s × 3600s/hr × 0.001  m3/L = 111.6 m3/hr
+    111.6 m3/hr / 185 m3 = 0.6 air changes per hour (ACH)
+
+This gives us a useful guide for minimum ventilation rates from an air quality perspective which is an important factor for whole house system design.
+
+Part F building regulations also stipulate minimum ventilation rates for intermittent and continuous extract ventilation. Except for intermittent extraction in kitchens without cooker hoods, these rates are typically lower than the whole-house ventilation rate.
+
+Ideally, ventilation for air quality should be demand-led. An airtight building with controlled ventilation, when actively used and understood by occupants, will provide better air quality and more control over ventilation heat loss compared to buildings that rely on natural ventilation. The latter may under-ventilate in calm weather and over-ventilate in very windy conditions.
 
 ## SAP 2012
 
