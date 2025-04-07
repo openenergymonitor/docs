@@ -58,6 +58,7 @@ Welcome to the OpenEnergyMonitor guide!
    :caption: Learn:
 
    Electricity Monitoring <electricity-monitoring/index>
-   Heat pumps <heatpumps/index>
+   Heatpump Guide <heatpumps/index>
+   HeatpumpMonitor.org Results <heatpumpmonitor/index>
    Sustainable Energy <sustainable-energy/introduction.md>
    PV Diversion <pv-diversion/index>
