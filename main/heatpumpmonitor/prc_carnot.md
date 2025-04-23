@@ -43,8 +43,12 @@ As we can see, a system operating at 55% of the ideal Carnot COP will achieve si
 
 - **Control issues** e.g rapid cycling on some models, heat pump never gets to efficient operating regime.
 
-- **Effects resulting from distortion**, some systems with poor balancing appear to give an issue here but needs more investigation.
+- **Effects resulting from distortion (buffers, low loss headers & plate heat exchangers)**, some systems with poor balancing appear to give an issue here but needs more investigation.
 
 - **Refrigerant cycle** / quality control, e.g under charged systems, other defects.
+
+- **Time spent at more efficient or less efficient compressor operating points**. The performance at a given outside and flow temperature also varies with compressor speed, as highlighted by Mick Wall in his [blog](https://energy-stats.uk/smaller-heat-pumps-will-never-reach-top-of-the-scops), with the following extract from the Vaillant performance tables. A COP of 4.6 is achievable at 40 rps, but only 3.3 at 110 rps. If a heat pump delivers most of it's heat at high rps the performance will be lower than the same unit at a lower rps, even though the system temperatures are the same.
+
+![img](img/5kW-35-30-Czech-one-2048x701.png)
 
 Understanding and quantifying these factors is a key part of understanding the remaining variation in system performance beyond basic system flow and outside temperature variation.

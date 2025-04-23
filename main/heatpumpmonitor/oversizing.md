@@ -10,7 +10,7 @@ Conversely adding a fairly significant margin on top of an [accurate heat loss c
 
 - System 68, 10 kW Viessmann  5.4 kW heat demand, SPF H4 5.0 (80% margin on top of the measured heat loss, 35% margin on top of the pre-installation calculated heat loss.) [[13]](https://heatpumpmonitor.org/heatloss?id=68).
 
-- System 278, 10 kW Vaillant, 7.0 kW heat demand, SPF H4 4.8 (35-40% margin on top of the measured heat loss, -15% margin on pre-2000 CIBSE assumptions = 11.7 kW) [[14]](https://heatpumpmonitor.org/heatloss?id=278).
+- System 278, 10 kW Vaillant, 7.0 kW heat demand, SPF H4 4.8 (35-40% margin on top of the measured heat loss, -15% margin on pre-2000 DHDG CIBSE assumptions = 11.7 kW) [[14]](https://heatpumpmonitor.org/heatloss?id=278).
 
 There are also plenty of 5 kW units on the site that are delivering SPF’s around 4.5 with a real world measured heat loss of 3.5 kW (40% margin).
 

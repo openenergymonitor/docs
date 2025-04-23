@@ -45,16 +45,16 @@ Here's a screenshot from the Viessmann Vitocal:
 
 *The precision of the measured heat loss value is typically +-15%.*
 
-## Accurate vs default CIBSE heat loss calculations
-It's worth clarifying how certain assumptions used in heat loss calculations can lead to inaccurate results and define what we mean by an **accurate heat loss calculation** vs a **by-the-book default CIBSE heat loss calculation**. Understanding the difference between these is key to both setting weather compensation well and sizing the heat pump itself, avoiding over-sizing while ensuring there is enough margin to cover defrost conditions.
+## Accurate vs default DHDG heat loss calculations
+It's worth clarifying how certain assumptions used in heat loss calculations can lead to inaccurate results and define what we mean by an **accurate heat loss calculation** vs a **by-the-book default CIBSE Domestic Heating Design Guide heat loss calculation**. Understanding the difference between these is key to both setting weather compensation well and sizing the heat pump itself, avoiding over-sizing while ensuring there is enough margin to cover defrost conditions.
 
 - **An accurate heat loss calculation:**  is a heat loss calculation that matches measured heat demand under design conditions to within say +-15%. This is typically an averaged heat demand over a 24 hour period.
 
-- **A by-the-book default CIBSE heat loss calculation:** is a heat loss calculation that is based on default assumptions in the CIBSE domestic heating design guide. This can result in heat loss results that are at worst 2.5x over-estimated (solid stone pre-2000 mid-terrace) but are more usually 1.5-1.8x in properties built before the year 2000 ([93% of UK housing stock](https://en.wikipedia.org/wiki/Housing_in_the_United_Kingdom)).
+- **A by-the-book domestic heating design guide heat loss calculation:** is a heat loss calculation that is based on default assumptions in the CIBSE domestic heating design guide. This can result in heat loss results that are at worst 2.5x over-estimated (solid stone pre-2000 mid-terrace) but are more usually 1.5-1.8x in properties built before the year 2000 ([93% of UK housing stock](https://en.wikipedia.org/wiki/Housing_in_the_United_Kingdom)).
 
 The main factors that contribute to differences between heat loss calculations and measured demand are:
 
-- Air change rates (e.g Pre-2000 & 2006 CIBSE)
+- Air change rates (e.g Pre-2000 & 2006 design guide)
 - U-values (e.g solid stone, brick and window U-values can often be lower than CIBSE defaults)
 - Design outside temperatures (actual 99.6% design temperature can often be higher than default tables).
 - Semi-detached/terraced assumptions about neighbor temperatures. It is of course good to have contingency to cover periods with neighbors unoccupied but this can be a source of the difference).
@@ -65,7 +65,10 @@ While using this tool, notice how an over-estimated heat loss suggests that a lo
 
 ![image](img/simple_heat_loss.png)
 
-The industry is moving in the direction of improving the accuracy of heat loss calculations. CIBSE are due to publish updated guidance on this, including a recommendation to use a blower door test to inform air change rate assumptions. 
+The industry is moving in the direction of improving the accuracy of heat loss calculations:
+
+**New MCS heat load calculator**<br>
+Up until December 2024 the Excel MCS heat loss calculator also used the calculation method from the Domestic Heating Design Guide but this has now been replaced with a new online heat load calculator that implements the full EN12831 ventilation heat loss calculation. [This effectively halves ventilation heat loss in pre-2000 naturally ventilated buildings, 1.7 ACH becomes around 0.8 ACH](https://docs.openenergymonitor.org/heatpumps/air_change_rate_calculations.html#en12831-2017). This EN12831 compliant calculation is not widely used in other domestic heat loss tools at the time of writing.
 
 ## Accurate heat loss risks
 
