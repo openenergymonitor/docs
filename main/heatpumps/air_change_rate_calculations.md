@@ -30,13 +30,16 @@ The following examines the EN12831 standard and alternative approaches to calcul
 
 ## EN12831:2017
 
-The MCS heat pump standard states that heat loss calculations *shall* be done in accordance with EN 12831:2017. Crucially this standard details both a simplified and a more comprehensive 'standard' calculation method. It is worthwhile reading if you want a deeper understanding of this often referenced document. 
+The MCS heat pump standard states that heat loss calculations *shall* be done in accordance with EN 12831-1:2017. Crucially this standard details both a simplified and a more comprehensive 'standard' calculation method. It is worthwhile reading if you want a deeper understanding of this often referenced document. 
 
 **Tip:** Given the importance of this standard it should arguably be provided free of charge by MCS or another suitable body. It is however possible to buy the standard for a more reasonable amount from the [Estonian Centre for Standardisation and Accreditation](https://www.evs.ee/en/evs-en-12831-1-2017).
 
-The MCS heat pump calculator implements most of the simplified calculation method - but seems to miss out a significant factor (f<sub>i-z</sub>)that halves ventilation heat loss  when individual rooms are summed together to give the ventilation heat loss for the whole dwelling. 
+The old spreadsheet version of the MCS heat loss calculator was not compliant with EN 12831-1:2017. In December 2024, MCS launched a new online heat load tool that now implements the standard EN 12831-1:2017 calculation method.
 
 **Simplified calculation method**<Br>
+
+*Note: The simplified method is only applicable to very airtight buildings. The standard provides an example of an n₅₀ value of less than 3 ACH, which is extremely low. Arguably, any building with such a low ventilation rate would also require a mechanical ventilation system to maintain healthy indoor air quality—at which point, the full calculation method becomes necessary. This raises the question: are there any practical buildings where the simplified method can actually be used?*
+
 The main equations for the simplified method are given in 6.3.3.2.2. Notice how q<sub>v,min,i</sub> is multiplied by f<sub>i-z</sub> in equation 13 but not in equation 14.
 
 ![image](img/en12831_simple.png)
@@ -68,17 +71,18 @@ One of the things to notice is that the calculation for q<sub>v,env,i</sub> incl
 
 The exact reasons for these factors are not clearly articulated in the standard. A logical explanation could be that under wind load, rooms facing the wind might have cold air pushed into them. This air would then move, pre-warmed, to adjoining rooms on the other side of the building, resulting in higher heating requirements for wind-facing rooms than those on the leeward side. The latter halving likely reflects an averaging out of these effects across the entire building.
 
-*We would welcome peer review of these points. This interpretation is based on our understanding of the standard, and it would be beneficial to have it confirmed by others.*
-
 **Example spreadsheet calculation using the EN12831-1:2017 standard method**
 
 The following spreadsheet example implement the standard method as closely as possible. Please check these calculations and use with caution.
 
 ![image](img/en12831_spreadsheet.png)
 
-**Download:** [EN12831_2017_ventilation_calculation.ods](img/EN12831_2017_ventilation_calculation.ods)
+**Download:** [EN12831_2017_ventilation_calculation_v2.ods](img/EN12831_2017_ventilation_calculation_v2.ods) (Updated May 2025).
 
-The example given is of Trystan Lea's mid-terrace solid stone house. It uses the measured blower door test air permeability result of 8.9 m3/h/m2 (corrected up to 9.5 m3/h/m2 as blower door test noted envelope area must have used external dimensions). This is the result **without** taping up the extract vents and the stove. Assuming natural ventilation it suggest a whole house air change rate of 0.6 ACH (with individual rooms at 1.1 ACH). This whole house air change rate agrees well with CO2 monitoring derived results and coincidentally the part F minimum.
+**Online javascript tool:** [EN12831 Ventilation Calculator](https://openenergymonitor.org/tools/ventilation_12831) (New May 2025).
+
+The example given is of Trystan Lea's mid-terrace solid stone house. It uses the measured blower door test air permeability result of 8.4 m3/h/m2 (corrected up to 15.2 m3/h/m2 as blower door test noted envelope area included party walls). Assuming natural ventilation + intermittent extraction it suggest a whole house air change rate of 0.6 ACH. This whole house air change rate agrees well with CO2 monitoring derived results and coincidentally the part F minimum.
+
 
 
 ## Part F regulations
