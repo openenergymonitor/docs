@@ -31,7 +31,7 @@ Please follow the hardware installation guides here to get started:
 
 ## 2. Sensor Installation
 
-*The following image shows our original emonPi energy monitor, the same CT configuration options are applicable for our latest emonTx4 hardware as well.*Add commentMore actions
+*The following image shows our original emonPi energy monitor, the same CT configuration options are applicable for our latest emonTx4 hardware as well.*
 
 ![](img/solar-pv/solar-pv-install.webp)
 
