@@ -31,9 +31,7 @@ Please follow the hardware installation guides here to get started:
 
 ## 2. Sensor Installation
 
-*The following image shows our original emonPi energy monitor, the same CT configuration options are applicable for our latest emonTx4 hardware as well.*
-
-![](img/solar-pv/solar-pv-install.webp)
+![](img/solar-pv/CTs-on-cables-333mV.webp)
 
 It is important that a voltage sensor is used for solar PV monitoring. 
 
@@ -45,8 +43,6 @@ Your safety is your responsibility. Clip-on current sensors are non-invasive and
 ```{note}
 The clip-on CT sensors must be clipped round either the Line or Neutral AC wire, **Not both**.
 ```
-
-*While the images below show the original blue CT sensors, our latest CT sensors for the emonTx4 are different in appearence but the principle of the image is the same.*
 
 ![CT sensor installation ](img/solar-pv/ctinstall.jpg)
 
