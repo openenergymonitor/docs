@@ -55,10 +55,10 @@ This relatively simple voltage bias source does have some limitations. See [Buff
 
 ## Notes on Mains Voltage Limits
 
-The standard domestic mains supply for Europe is 230 V ± 10%, giving a lower limit of 207 V and an upper limit of 253 V. It is permissible under BS 7671 to have a voltage drop within the installation of 5%, which would give a lower limit of 195.5 V.
-The UK standard prior to harmonization was 240 V ± 6%, giving an upper limit of 254.4 V.
+The standard domestic mains supply for Europe is 230 V -6% +10%, giving a lower limit of 216.2 V and an upper limit of 253 V. It is permissible under BS 7671 to have a voltage drop within the installation of 5%, which would give a lower limit of 205.4 V.
+The UK standard prior to harmonisation was 240 V ± 6%, giving an upper limit of 254.4 V and a lower limit of 225.6 V. For Europe, the standard was 220 V ± 6%, giving an upper limit of 233.2 V and a lower limit of 206.8 V. The original harmonised EU standard was 230 V ± 10%, giving an upper limit of 253 V and a lower limit of 207 V, thus nearly covering the range of both European and UK ‘old’ standards.
 
-Although the UK nominal standard is now 230 V, the supply system has not generally been adjusted, and the voltage centers around 240 V.
+Although the UK nominal standard is now 230 V, the supply system has not generally been adjusted, and the voltage centers around 240 V. Eventually, the voltage can be expected to centre around 230 V as transformers come to the end of their life and are replaced.
 
 Thanks to Robert Wall for summarizing the rather convoluted standards surrounding UK grid voltages.
 
