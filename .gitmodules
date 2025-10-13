@@ -1,7 +1,7 @@
 [submodule "emontx4"]
 	path = emontx4
 	url = https://github.com/openenergymonitor/emontx4
-        branch = main
+	branch = main
 [submodule "emontx3"]
 	path = emontx3
 	url = https://github.com/openenergymonitor/emontx3
@@ -20,14 +20,17 @@
 [submodule "emonbase"]
 	path = emonbase
 	url = https://github.com/openenergymonitor/emonbase
-        branch = main
+	branch = main
 [submodule "learn"]
 	path = learn
 	url = https://github.com/openenergymonitor/learn
-        branch = master
+	branch = master
 [submodule "emonth2"]
 	path = emonth2
 	url = https://github.com/openenergymonitor/emonth2
 [submodule "emonpi2"]
 	path = emonpi2
-	url = git@github.com:openenergymonitor/emonpi2.git
+	url = https://github.com:openenergymonitor/emonpi2
+[submodule "emontx5"]
+	path = emontx5
+	url = https://github.com/openenergymonitor/emontx5
