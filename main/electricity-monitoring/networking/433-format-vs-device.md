@@ -22,28 +22,24 @@ There are 3 types of Radio Format in use;
 
 ? means unknown
 
-\# - available in OEM Shop 19/12/2022
+\# - available in OEM Shop 19/12/2022.
 
-\*1 [https://github.com/openenergymonitor/emontx4/tree/main/firmware/EmonTxV4/compiled](https://github.com/openenergymonitor/emontx4/tree/main/firmware/EmonTxV4/compiled) note: files for all three formats are available here
+\*1 [EmonTxV4/compiled](https://github.com/openenergymonitor/emontx4/tree/main/firmware/EmonTxV4/compiled) note: files for all three formats are available here.
 
-\*2 [https://community.openenergymonitor.org/t/the-emonpicm/18173](https://community.openenergymonitor.org/t/the-emonpicm/18173)
+\*2 [The emonPiCM](https://community.openenergymonitor.org/t/the-emonpicm/18173).
 
-\*3 need to edit JeeLib files
+\*3 need to edit JeeLib files.
 
-\*4 [https://mk2pvrouter.co.uk/index.html](https://mk2pvrouter.co.uk/index.html)
+\*4 [https://mk2pvrouter.co.uk/index.html](https://mk2pvrouter.co.uk/index.html).
 
 \*5 needs selection of correct hardware (e.g. including RFM69) and firmware
 
-\*6  GLCD RFM69 native packet format firmware is here:
-[https://github.com/alandpearson/EmonGLCD/tree/master/firmware/SolarPV_rfm69]
-Also see:
-[https://community.openenergymonitor.org/t/the-emonpicm/18173/15](https://community.openenergymonitor.org/t/the-emonpicm/18173/15) onwards
+\*6  GLCD RFM69 native packet format firmware is [SolarPV_rfm69](https://github.com/alandpearson/EmonGLCD/tree/master/firmware/SolarPV_rfm69).
 
+See [this post](https://community.openenergymonitor.org/t/the-emonpicm/18173/15) onwards.
 
-
-\*7 The RFM69Pi module has all three formats available at [https://docs.openenergymonitor.org/emonbase/rfm69-pi.html](https://docs.openenergymonitor.org/emonbase/rfm69-pi.html) It can also be programmed from the emomSD software update page.
+\*7 The RFM69Pi module has all three formats available at [rfm69-pi](https://docs.openenergymonitor.org/emonbase/rfm69-pi.html). It can also be programmed from the emomSD software update page.
 
 ## RFM Packet Formats
 
 ![RFM Formats](files/RF-Formats-compared.png)
-
