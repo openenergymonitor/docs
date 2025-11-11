@@ -1,0 +1,25 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  
+  {# Open Graph meta tags #}
+  <meta property="og:site_name" content="OpenEnergyMonitor Documentation" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ title|striptags|e }}" />
+  <meta property="og:description" content="OpenEnergyMonitor: Open-source energy monitoring tools for understanding and reducing energy consumption." />
+  {% if pageurl %}
+  <meta property="og:url" content="{{ pageurl }}" />
+  {% elif pagename %}
+  <meta property="og:url" content="https://docs.openenergymonitor.org/en/latest/{{ pagename }}{{ file_suffix }}" />
+  {% endif %}
+  <meta property="og:image" content="https://docs.openenergymonitor.org/en/latest/_static/oemlogo.png" />
+  <meta property="og:image:alt" content="OpenEnergyMonitor Logo" />
+  
+  {# Twitter Card meta tags #}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title|striptags|e }}" />
+  <meta name="twitter:description" content="OpenEnergyMonitor: Open-source energy monitoring tools for understanding and reducing energy consumption." />
+  <meta name="twitter:image" content="https://docs.openenergymonitor.org/en/latest/_static/oemlogo.png" />
+  <meta name="twitter:image:alt" content="OpenEnergyMonitor Logo" />
+{% endblock %}

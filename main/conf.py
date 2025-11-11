@@ -27,6 +27,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md']
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+html_baseurl = 'https://docs.openenergymonitor.org/en/latest/'
 
 html_context = {
     "display_github": True, # Integrate GitHub
