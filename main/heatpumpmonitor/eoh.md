@@ -1,17 +1,17 @@
 # Analysis of Electrification of Heat trial data
 
-Perhaps one of the more notable headline results from HeatpumpMonitor.org, is the relatively high average performance of the systems on the site. At the time of writing, the 78 air source heat pumps with a full year of data are currently running at an average Seasonal Performance Factor (SPF), H4 boundary of 3.9 [[1]](https://dev.heatpumpmonitor.org/?filter=query:hp_type:air,boundary:h4).
+Perhaps one of the more notable headline results from HeatpumpMonitor.org, is the relatively high average performance of the systems on the site. At the time of writing, the 170 air source heat pumps with a full year of data are currently running at an average Seasonal Performance Factor (SPF), H4 boundary of 3.86 [[1]](https://heatpumpmonitor.org/?period=custom&filter=query:cooling_heat_kwh:1:lt:t,boundary:H4:eq:t,hp_type:air:eq:t).
 
 This result is in contrast of course with the other trials such as the recently published Electrification of Heat trial, which found an average SPF H4 of 2.81 for 428 air source heat pumps [[2]](https://es.catapult.org.uk/report/electrification-of-heat-summary-reports-and-datasets). Previous trials also recorded low average performance results. The following table compares the results from these wider trials to the HeatpumpMonitor.org result:
 
 | Trial/project name     |  Number of systems | Mean ASHP SPF H4    |
 |------------------------|-------|----------------|
-| **HeatpumpMonitor.org [[1]](https://dev.heatpumpmonitor.org/?filter=query:hp_type:air,boundary:h4)**   | 72 | **3.9**             |
+| **HeatpumpMonitor.org [[1]](https://dev.heatpumpmonitor.org/?filter=query:hp_type:air,boundary:h4)**   | 170 | **3.86**             |
 | Electrification of Heat [[2]](https://es.catapult.org.uk/report/electrification-of-heat-summary-reports-and-datasets) | 428 | 2.81           |
 | RHPP [[3]](https://doc.ukdataservice.ac.uk/doc/8151/mrdoc/pdf/8151_decc_rhpp_detailed_analysis_report.pdf)                    | 297| 2.36           |
 | EST [[4]](https://www.icax.co.uk/pdf/The_heat_is_on_EST_report.pdf)                     | 15 | 2.45           |
 
-The performance gap that we see here is clearly significant and at price cap electricity rates makes a big difference to the economics of heat pumps. An SPF of 2.8 provides cost parity running costs to gas when you include the saving from removing the gas standing charge as well, an SPF of 3.9 provides substantial savings, ~£220/year for an average household or 26%. Many are also combining high efficiency with time of use tariff optimisation providing even grater savings.
+The performance gap that we see here is clearly significant and at price cap electricity rates makes a big difference to the economics of heat pumps. An SPF of 2.8 provides cost parity running costs to gas when you include the saving from removing the gas standing charge as well, an SPF of 3.86 provides substantial savings, ~£220/year for an average household or 26%. Many are also combining high efficiency with time of use tariff optimisation providing even grater savings.
 
 The big question that the HeatpumpMonitor.org results raises is: **Why do we see this large difference in performance?**
 
@@ -48,38 +48,50 @@ The key issue here is that the system is ramping up to much higher flow temperat
 
 **Dashboard link:** [https://eoh.heatpumpmonitor.org/emoncms/EOH2578/app/view?mode=power&start=1645488000&end=1645574400](https://eoh.heatpumpmonitor.org/emoncms/EOH2578/app/view?mode=power&start=1645488000&end=1645574400)
 
-The long off periods (~1.5 hrs) visible between the high temperature cycles together with the fact that the compressor is running at 100% when it is running, indicates an opportunity for the system to deliver the same amount of heat and comfort by running at a lower flow temperature and at a lower compressor modulation. This would result in a substantial improvement in performance.
+The long off periods (~1.5 hrs) visible between the high temperature cycles together with the fact that the compressor is running at near full capacity when it is running, indicates an opportunity for the system to deliver the same amount of heat and comfort by running at a lower flow temperature and at a lower compressor modulation. This would result in a substantial improvement in performance.
 
 The pattern seen here of the flow temperature ramping up to a higher flow temperature than required is consistent with either the weather compensation setting being set too high or the system being ran with a high fixed flow temperature target. The flow temperature and compressor modulation can be reduced by reducing the weather compensation curve setting and turning weather compensation on if not currently in use.
 
 **Simulated performance results:**
-To get an idea of the performance improvement that might result from this change, we can simulate this system using our [dynamic heat pump simulation tool](https://openenergymonitor.org/tools/dynamic_heatpump_v1.html). Use the following parameters to simulate the period from 9am to 10pm in the screenshot above:
+To get an idea of the performance improvement that might result from this change, we can simulate this system using our [dynamic heat pump simulation tool](https://openenergymonitor.org/tools/dynamic_heatpump_v1.html). 
 
-- Building heat loss: 5.5 kW (240 W/K)
-- Heat pump capacity: 12 kW
-- Radiator rated output at DT50: 13.5 kW
-- Control mode: Fixed speed compressor
-- Compressor speed: 100%
-- Limit by room set point enabled
-- Schedule: 19.6C all day
-- Outside temperature: 6.6C (2C oscillation)
-- COP model: Carnot (variable offset)
-- \% of ideal COP: 45%
-- System volume: 150L
+Use the following parameters to simulate the illustrative example from system EOH2578 above:
 
-This simulation run, yields a COP of 2.87, 10 cycles per day and a max flow temperature of 57C, providing a good match to the real world data above.
+- A heat pump COP model based on interpolation of the detailed data tables provided for the 12 kW Vaillant Arotherm+ available in the Czech datasheets.
+- Building heat loss of 6.9 kW.
+- Radiator rated output at ΔT50 of 22 kW.
+- Room set point control enabled with a schedule targeting 19.6°C between 5am and 9pm.
+- Outside temperature averaging 6.5°C with a 4°C oscillation,
+- System volume of 120L
 
-To simulate the effect of optimising the weather compensation curve, simply reduce the compressor speed to the minimum required to maintain the same indoor temperature set point. In this case this is the minimum modulation of the theoretical heat pump which is 40%.
+To reproduce the pattern observed of the heat pump running at near max output during the brief run periods, the Vaillant heat pump is simulated as having a fixed compressor at 74% modulation, this provides blocks of heat output at ~13 kW which is close to that observed in the EOH2578 example.
 
-This simulation run, yields a COP of 3.88, illustrating the significant performance improvement that can be gained with this simple change. Further performance gains could be realised by 
+For ease of reproduction the following JSON configuration can be imported into the tool:
 
-- \+ A better sized 7 kW Vaillant Arotherm: 4.13
-- \+ 19 kW of radiator capacity (3.5x the 5.5 kW heat loss): 4.54
-- \+ 50% of ideal Carnot : 5.04
+```
+{"days":4,"building":{"heat_loss":6900,"internal_gains":390,"fabric":[{"proportion":52,"WK":576.9230769230769,"kWhK":48,"T":16},{"proportion":28,"WK":1071.4285714285713,"kWhK":8,"T":17},{"proportion":20,"WK":1499.9999999999998,"kWhK":4,"T":18}],"fabric_WK":299.99999999999994},"external":{"mid":6.5,"swing":3,"min_time":"00:00","max_time":"07:00"},"heatpump":{"capacity":17900,"system_water_volume":120,"flow_rate":12,"system_DT":5,"radiatorRatedOutput":22000,"radiatorRatedDT":50,"prc_carnot":47,"cop_model":"vaillant12","standby":30,"pumps":15,"minimum_modulation":40},"control":{"mode":"3","wc_use_outside_mean":1,"Kp":2500,"Ki":0.2,"Kd":0,"wc_Kp":500,"wc_Ki":0.05,"wc_Kd":0,"curve":1,"limit_by_roomT":true,"roomT_hysteresis":0.6,"fixed_compressor_speed":74},"schedule":[{"start":"00:00","set_point":10,"price":24.86},{"start":"05:00","set_point":19.6,"price":24.86},{"start":"21:00","set_point":10,"price":24.86}]}
+```
 
-The last factor here the % of ideal Carnot is a bit more uncertain. High performance systems often achieve high % of ideal Carnot. Factors such as good water quality to avoid heat meter under-read issues, short primary pipework to avoid external heat loss help increase this factor. Exact quantification of which factors affect this metric is an ongoing research question.
+This simulation run, yields a COP of 3.01, slightly higher than the COP of 2.86 observed in reality: 
 
-*These simulated model results should be treated with caution, while the dynamic simulation tool does reproduce measured results quite well in our early tests, the implementation is a significant simplification compared to the much more complex real world of heating system hydronics and heat pump vapour-compression cycles. Real-world validation of the above simulated results on Electrification of Heat systems after tuning control settings would be a good next step.*
+![](img/eoh2578_sim.png)
+
+To assess the impact of optimizing the weather compensation curve, the simulation was repeated with the compressor speed reduced to the minimum required to maintain the indoor temperature set point. The schedule is also revised to start earlier in order to maintain the indoor temperature at the expected set point for the same period of time.
+
+We typically see the 12 kW Vaillant Arotherm+ modulate down to ~5.5 kW of heat output on HeatpumpMonitor.org. This is reproduced in the simulator by setting the fixed compressor modulation to 31%. We need to move the schedule starting time forward from 5am to 1:45am to meet the same 19.6C average room temperature between 6:45am and 8:45pm.
+
+This results in a COP of 4.61, demonstrating a substantial improvement in performance from this simple adjustment. The electricity consumed is reduced significantly, from 26.4 kWh down to 17.7 kWh. The morning peak in electricity demand is moved further into the off-peak period, and the peak demand at 6am is reduced from 5.1 kW down to 1.2 kW, providing further benefits to the wider energy system.
+
+![](img/eoh2578_sim_tuned.png)
+
+Import the following JSON configuration into the tool to reproduce:
+
+```
+{"days":4,"building":{"heat_loss":6900,"internal_gains":390,"fabric":[{"proportion":52,"WK":576.9230769230769,"kWhK":48,"T":16},{"proportion":28,"WK":1071.4285714285713,"kWhK":8,"T":17},{"proportion":20,"WK":1499.9999999999998,"kWhK":4,"T":18}],"fabric_WK":299.99999999999994},"external":{"mid":6.5,"swing":3,"min_time":"00:00","max_time":"07:00"},"heatpump":{"capacity":17900,"system_water_volume":120,"flow_rate":12,"system_DT":5,"radiatorRatedOutput":22000,"radiatorRatedDT":50,"prc_carnot":47,"cop_model":"vaillant12","standby":30,"pumps":15,"minimum_modulation":30},"control":{"mode":"3","wc_use_outside_mean":1,"Kp":2500,"Ki":0.2,"Kd":0,"wc_Kp":500,"wc_Ki":0.05,"wc_Kd":0,"curve":1,"limit_by_roomT":true,"roomT_hysteresis":0.6,"fixed_compressor_speed":31},"schedule":[{"start":"00:00","set_point":10,"price":24.86},{"start":"01:45","set_point":19.6,"price":24.86},{"start":"21:00","set_point":10,"price":24.86}]}
+```
+
+*While the dynamic simulation tool has demonstrated good agreement with measured results in preliminary testing and uses a heat pump model based on interpolation of Vaillant datasheet data tables, it necessarily represents a simplification of the complex hydronic and vapor-compression and control processes present in real heating systems. Therefore, these simulated results should be
+interpreted with caution. Real-world validation of the above simulated results on Electrification of Heat systems after tuning control settings would be a good next step.*
 
 ## Sub-optimal weather compensation prevalence
 
