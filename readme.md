@@ -7,6 +7,7 @@ The docs can be built and previewed locally:
 ### 1. Clone repo and sub-modules 
 
     git clone https://github.com/openenergymonitor/docs
+    cd docs
     git submodule update --init
 
 ### 2. Install Sphinx
