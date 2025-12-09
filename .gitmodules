@@ -30,7 +30,7 @@
 	url = https://github.com/openenergymonitor/emonth2
 [submodule "emonpi2"]
 	path = emonpi2
-	url = https://github.com:openenergymonitor/emonpi2
+	url = https://github.com/openenergymonitor/emonpi2
 [submodule "emontx5"]
 	path = emontx5
 	url = https://github.com/openenergymonitor/emontx5
