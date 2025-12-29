@@ -36,7 +36,7 @@ At both ends, strip back the outer sheath. At the emonTx/emonPi end where you wi
 
 At the c.t. end, cut back and insulate the cable screen. Join the two cores of the c.t’s cable onto the two inner cores of the new cable. To maintain the phase relationship, ensure that the core of the c.t’s cable that went to the plug tip still connects via the extension cable to the plug tip, and the other core that connected to the plug sleeve still connects via the extension cable to the plug sleeve. If you have an American c.t. with white and black twisted wires, connect the white wire through the extension cable to the plug tip and the black wire to the sleeve. Do not connect the screen of the c.t’s cable (if it is screened).
 
-![Extending CT leads drawing Extending CT leads](files/extending-ct-leads.png)
+![Extending CT leads drawing Extending CT leads](files/extending-ct-leads2.png)
 
 ## Can I use a ready-made headphone extension lead?
 
