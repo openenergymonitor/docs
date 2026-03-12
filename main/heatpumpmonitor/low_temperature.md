@@ -78,7 +78,7 @@ Comparing the stated design flow temperature of each system with the actual aver
 
 A part of this gap, for some systems, between design an measured coldest day mean flow temperature will be due to the measured coldest day not quite matching the design conditions, e.g lower average internal temperature and/or higher average outside temperature. This does not however appear to explain most of the difference.
 
-The following chart shows the measured conditions on the coldest day vs the difference between the design flow temperature and measured flow temperature. The correlation here is very week (R2 0.14) suggesting other factors are more important.
+The following chart shows the measured conditions on the coldest day vs the difference between the design flow temperature and measured flow temperature. There is no correlation here (R2 0.14) suggesting that other factors are affecting this.
 
 ![image](img/design_vs_measured_conditions2.png)
 
