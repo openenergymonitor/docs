@@ -17,6 +17,7 @@ Welcome to the OpenEnergyMonitor guide!
    :maxdepth: 2
    :caption: Main System:
 
+   emonPi3 <emonpi3/index>
    emonPi2 <emonpi2/index>
    emonTx5 <emontx5/index>
    emonTx4 <emontx4/index>
