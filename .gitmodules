@@ -34,3 +34,6 @@
 [submodule "emontx5"]
 	path = emontx5
 	url = https://github.com/openenergymonitor/emontx5
+[submodule "emonpi3"]
+	path = emonpi3
+	url = https://github.com/openenergymonitor/emon32-fw
