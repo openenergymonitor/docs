@@ -16,21 +16,20 @@ Welcome to the OpenEnergyMonitor guide!
 .. toctree::
    :maxdepth: 2
    :caption: Main System:
-
    emonPi3 <emonpi3/index>
-   emonPi2 <emonpi2/index>
-   emonTx5 <emontx5/index>
-   emonTx4 <emontx4/index>
+   emonTx6 <emonpi3/index>
    emonTH2 <emonth2/index>
-   emonBase <emonbase/index> 
 
-   
 .. toctree::
    :maxdepth: 2
    :caption: Older Hardware:
 
-   emonTx3 <emontx3/index>
+   emonPi2 <emonpi2/index>
    emonPi1 <emonpi/index>
+   emonTx5 <emontx5/index>
+   emonTx4 <emontx4/index>
+   emonTx3 <emontx3/index>
+   emonBase <emonbase/index> 
    
 .. toctree::
    :maxdepth: 2
