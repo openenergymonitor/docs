@@ -1,60 +1,81 @@
 # System Overview
 
-The OpenEnergyMonitor system has the capability to monitor electrical energy use / generation, temperature and humidity. It can also integrate with M-BUS and Modbus heat meters and other electricity meters for heat pump monitoring.
+The OpenEnergyMonitor system has the capability to monitor electrical energy use / generation, temperature and humidity. It can also integrate with M-Bus and Modbus heat meters and other electricity meters for heat pump monitoring.
 
-The units below can be configured to work for a variety of applications. The system is fully open-source, both hardware and software. All hardware is based on the [Arduino](http://www.arduino.cc/) and [Raspberry Pi](http://raspberrypi.org) platforms.
+The units below can be configured to work for a variety of applications. The system is fully open-source, both hardware and software. 
 
 % ![image](img/oemfpsystemdiagram.png)
 
 ## Current system 
 
-### Introducing the emonPi2
+### Introducing the emonPi3
 
-A 6 channel electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring, wired temperature sensing & pulse counting. Can be used as a base-station for further sensor nodes. Full local or remote data logging and visualisation capability via EmonCMS. 
+A 6 channel electricity monitor with an integrated Raspberry Pi. Supports single or three-phase monitoring and wired temperature sensing. Can be used as a base-station for further sensor nodes. Full local or remote data logging and visualisation capability via EmonCMS. 
 
-![emonPi2_complete_kit__77966.jpg](img/emonPi2_complete_kit__77966.jpg)
+![emonpi3.png](img/emonpi3.png)
 
-**Expand your system with:**
+<!---
 
 ```{image} img/ctsensor.png
 :width: 50px
 :align: left
 ```
+
+
 **Expand the emonPi2 to 12 CT channels:** Add a further 6 CT channels to the emonPi2 (Pi Zero 2W option only).<br><br>
+
+-->
+
+**Expand your system with:**
 
 ```{image} img/emontx5-min.png
 :width: 50px
 :align: left
 ```
 
-**emonTx5:** A 6 channel electricity monitoring node. Transmits data via 433MHz radio to an emonPi or emonBase. Great for expanding an emonPi2 monitoring setup where more CT inputs are required either in the same location or in a different part of the building. Expand the emonTx5 to 12 CT channels with an optional expansion board.<br><br>
+**emonTx6:** A 6 channel electricity monitoring node. Transmits data via 433.92MHz radio to an emonPi3. Great for expanding an emonPi3 monitoring setup where more CT inputs are required either in the same location or in a different part of the building.<br><br>
 
 ```{image} img/emonth-min.png
 :width: 50px
 :align: left
 ```
-**emonTH2:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433MHz radio to an emonBase or emonPi.<br><br>
+**emonTH2:** A battery powered, wireless, room based temperature & humidity monitoring node. Transmits data via 433.92MHz radio to an emonPi3.<br><br>
 
 ```{image} img/heatmeter-min.png
 :width: 50px
 :align: left
 ```
-**Heat metering:** Plug in a M-BUS reader and Modbus reader to the emonPi2 USB ports to read from heat meters and other electricity meters for heat pump monitoring. See also pre-provisioned level 3 heat pump monitor bundle and the [heatpumpmonitor.org](https://heatpumpmonitor.org/) initiative.<br><br>
+**Heat Pump Monitoring:** Use M-Bus and Modbus readers to read data from heat meters and other electricity meters with the emonPi3, ideal for heat pump monitoring. See also [our pre-provisioned level 3 heat pump monitor bundle](https://shop.openenergymonitor.com/level-3-heat-pump-monitoring-bundle-emonhp/).<br><br>
 
+---
+
+<!--
 ```{image} img/emonbase-min.png
 :width: 50px
 :align: left
 ```
+
 **emonBase:** A Raspberry Pi base-station that receives data sent from emonTx and emonTH radio nodes. Can be used instead of an emonPi2 where the installation favours locating these in different parts of a building.<br><br>
+-->
+
+**Software:**
 
 ```{image} img/emoncms-min.png
 :width: 50px
 :align: left
 ```
-**emonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi and emonBase, also available remotely via emoncms.org.
-<br><br>
+**EmonCMS:** An open-source web application, for processing, logging and visualising energy, temperature and other data. Runs locally on the emonPi3, also available remotely via [emoncms.org](https://emoncms.org/).<br><br>
+
+```{image} img/heatpumpmonitor.png
+:width: 50px
+:align: left
+```
+**[HeatPumpMonitor.org:](https://heatpumpmonitor.org/)** An open-source initiative to share and compare heat pump performance data from individual systems, contributed by users from around the world.<br><br> 
+
 
 ---
+
+<!---
 
 ```{image} img/emontx4-min.png
 :width: 50px
@@ -66,8 +87,7 @@ A 6 channel electricity monitor with an integrated Raspberry Pi. Supports single
 ```{tip}
 The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family and share the same core electricity monitoring functionality including: 6x CT channel electricity monitoring as standard (expandable to 12 CT's with an expansion board) and both single and full three phase voltage sensing support. The emonPi2 and the emonTx5 share the same measurement board, which is itself a minor evolution of the emonTx4 design, this is mostly a change of layout to support the integration of a RaspberryPi in the same enclosure for the emonPi2.
 ```
-
----
+-->
 
 **Sensors:**
 
@@ -83,23 +103,20 @@ The emonTx4, emonPi2 and emonTx5 are all part of the same AVR-DB hardware family
 :width: 50px
 :align: left
 ```
-**emonVs:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi2 and emonTx5 via RJ45.<br><br>
-<br><br>
+**emonVs:**<br>Combined precision voltage sensor and power supply, sends voltage data and power to the emonPi3 and emonTx6 via RJ45.<br><br>
 
 ---
 
 <p><b>Timeline</b></p>
 
-Open Energy Monitor has developed and evolved different hardware solutions overtime:
+OpenEnergyMonitor has developed and evolved different hardware solutions over time:
 
-```{image} img/timeline.png
+```{image} img/timeline_2026.jpeg
 :width: 500px
 :align: center
 ```
 
 <!-- 
-Invisible section: Contains source code for the image above using https://playground.diagram.codes/d/timeline
-    width=700
     "2010-2011": "emonTx1️"
     "March 2012": "emonTx2\nemonGLCD\nemonBase"
     "April 2012": "First Heat\nPump\napplication\n♨️"
@@ -114,10 +131,11 @@ Invisible section: Contains source code for the image above using https://playgr
     "March 2020": "OVMS"
     "November 2022": "emonTx4"
     "December 2023": "emonPi2"
-    "Future": "🔮"
     "Summer 2024": "emonTx5"
-    "2025": "emonPi3 & emonTx6" 
+    "2026": "emonPi3 & emonTx6" 
 -->
+
+<!---
 
 ---
 
@@ -143,6 +161,8 @@ Invisible section: Contains source code for the image above using https://playgr
 <br><br>
 
 ---
+
+-->
 
 <!--
 ## Example configurations
