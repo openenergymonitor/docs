@@ -16,15 +16,7 @@ It has no internal burden resistor, but a transient voltage suppressor limits th
 
 ## Test Rig
 
-<!----------------------------------------------------------------------------->
-
-<div class="xaxiswrapper">
-
-<embed alt="C.T. Test Rig" height="250" src="files/C.T. Test Rig.160705.svg" type="image/svg+xml" width="600">
-
-</div>
-
-<!------------------------------------------------------------------------------->
+![C.T. Test Rig](files/C.T. Test Rig.160705.svg)
 
 For test currents up to 100 A, the CT primary consists of from 1 to 20 turns of insulated 16/0.2mm wire. The majority of tests were made at 5 A – thus the primary current seen by the CT could be adjusted in steps of 5 A by enclosing a variable number of turns inside the core. For saturation tests up to 250 A, the primary consists of 50 passes of enamelled copper wire, the current being adjusted in this case.
 
