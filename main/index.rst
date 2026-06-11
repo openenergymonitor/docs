@@ -17,8 +17,7 @@ Welcome to the OpenEnergyMonitor guide!
    :maxdepth: 2
    :caption: Main System:
    
-   emonPi3 <emonpi3/index>
-   emonTx6 <emonpi3/index>
+   emonPi3/Tx6 <emonpi3/index>
    emonTH2 <emonth2/index>
 
 .. toctree::
