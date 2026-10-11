@@ -20,7 +20,7 @@ The [emonWiFi](https://github.com/openenergymonitor/emonwifi) is a small ESP32-C
 
 - Each channel (voltage, power, energy, temperature, pulse count) is exposed as a Home Assistant sensor, and energy sensors can be used directly in the Home Assistant Energy dashboard.
 - ESPHome can additionally forward the data to EmonCMS over HTTP(S) or MQTT, so you can use both.
-- The emonTx can be configured from Home Assistant by sending serial commands through the `emontx.send_command` action. See [ha-emon-config](https://github.com/FredM67/ha-emon-config) for a ready-made configuration interface.
+- The emonTx can be configured directly from Home Assistant, see [Configuring the emonTx from Home Assistant](#configuring-the-emontx-from-home-assistant) below.
 
 ```{warning}
 Never plug the emonWiFi USB-C cable in while it is fitted to an emonTx, this can damage the emonTx. Read the hardware installation notes in the [emonWiFi repository](https://github.com/openenergymonitor/emonwifi) before fitting it.
@@ -55,6 +55,29 @@ sensor:
 ```
 
 See the [ESPHome emontx documentation](https://esphome.io/components/sensor/emontx/) for the full list of tags and options.
+
+### Configuring the emonTx from Home Assistant
+
+The [emonPi/Tx Configuration](https://github.com/FredM67/ha-emon-config) integration, available through [HACS](https://hacs.xyz/), adds a configuration panel to Home Assistant, so there is no need to send serial commands by hand. It provides:
+
+- CT and voltage calibration, radio settings and other device settings, applied in one go
+- Friendly names for CT, voltage, pulse and temperature channels
+- Live readings, energy and pulse counter reset, and a serial terminal
+- A generator for the ESPHome sensor configuration of the active channels
+- Firmware update checks and wireless firmware updates for the emonTx6/emonPi3
+- Support for several devices, and for 3-phase emonPi3 setups
+
+**Requirements:** the emonWiFi must be added to the ESPHome integration in Home Assistant, and its ESPHome configuration must include the `emontx_ha_bridge` external component alongside the `emontx` component.
+
+```{note}
+The `emontx_ha_bridge` component is not yet part of mainline ESPHome. It must be loaded via `external_components`, see the [integration documentation](https://github.com/FredM67/ha-emon-config#esphome-setup) for a complete example configuration.
+```
+
+**Installation:**
+
+1. In HACS, add `https://github.com/FredM67/ha-emon-config` as a custom repository (type *Integration*) and install **emonPi/Tx Configuration**.
+2. Restart Home Assistant.
+3. Go to `Settings > Devices & services > Add Integration` and search for **emonPi/Tx Configuration**.
 
 ## MQTT via emonHub
 
