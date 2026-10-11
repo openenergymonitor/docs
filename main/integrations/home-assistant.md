@@ -67,11 +67,28 @@ The [emonPi/Tx Configuration](https://github.com/FredM67/ha-emon-config) integra
 - Firmware update checks and wireless firmware updates for the emonTx6/emonPi3
 - Support for several devices, and for 3-phase emonPi3 setups
 
-**Requirements:** the emonWiFi must be added to the ESPHome integration in Home Assistant, and its ESPHome configuration must include the `emontx_ha_bridge` external component alongside the `emontx` component.
+**Requirements:** the emonWiFi must be added to the ESPHome integration in Home Assistant, and its ESPHome configuration must include these components:
 
-```{note}
-The `emontx_ha_bridge` component is not yet part of mainline ESPHome. It must be loaded via `external_components`, see the [integration documentation](https://github.com/FredM67/ha-emon-config#esphome-setup) for a complete example configuration.
+- `emontx_ha_bridge`: connects the emonTx to the integration (sends commands, forwards responses and data)
+- `emontx_updater`: downloads and flashes emonTx firmware updates over WiFi. It needs `http_request` with `buffer_size_rx: 4096`.
+- `emontx`: must be loaded from the same source as the two components above, as that version keeps the ESP32 responsive during long firmware uploads
+
+````{note}
+`emontx_ha_bridge` and `emontx_updater` are not yet part of mainline ESPHome. All three components must be loaded via `external_components`:
+
+```yaml
+external_components:
+  - source:
+      type: git
+      url: https://github.com/FredM67/esphome
+      ref: emontx-ha-bridge
+    components: [emontx, emontx_ha_bridge, emontx_updater]
 ```
+
+See the [integration documentation](https://github.com/FredM67/ha-emon-config#esphome-setup) for a complete example configuration.
+````
+
+**Wireless firmware updates** (emonTx6/emonPi3) need the emonTx to use the UART bootloader instead of the default USB (UF2) bootloader. Switching is a one-time step over USB: copy `change-bootloader-uart.uf2` from the [emon32-fw releases](https://github.com/openenergymonitor/emon32-fw/releases) onto the `EMONBOOT` drive. After that, firmware updates can be installed from Home Assistant, and the USB bootloader can be restored from the integration if needed.
 
 **Installation:**
 
