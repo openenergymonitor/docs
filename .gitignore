@@ -1,3 +1,16 @@
 _build
 _live
-venv/
+.docs-venv/
+
+# Doc repositories cloned by update.sh (see repos.conf)
+EmonScripts/
+emonbase/
+emoncms/
+emonhub/
+emonpi/
+emonpi2/
+emonpi3/
+emonth2/
+emontx3/
+emontx4/
+emontx5/

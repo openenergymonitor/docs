@@ -1,39 +1,35 @@
 # OpenEnergyMonitor Documentation
 
-## Local Preview
+Source for [docs.openenergymonitor.org](https://docs.openenergymonitor.org).
 
-The docs can be built and previewed locally:
+The general guide lives in `main/`. Product and software docs live in the `docs/` folder of their own repositories (emonPi3, emonHub, emonCMS, ...), listed in [repos.conf](repos.conf). `update.sh` clones those repositories into this directory, and the symlinks in `main/` (e.g. `main/emoncms -> ../emoncms/docs`) pull them into the build.
 
-### 1. Clone repo and sub-modules 
+## Build
+
+Requires git and python3 with venv (`sudo apt install python3-venv`).
 
     git clone https://github.com/openenergymonitor/docs
     cd docs
-    git submodule update --init --recursive
+    ./update.sh
 
-### 2. Install Sphinx
+This clones or updates every repository in `repos.conf`, installs Sphinx into a local `.docs-venv` from `requirements.txt`, and builds the html into `main/_live`.
 
-See: [http://www.sphinx-doc.org/en/master/usage/installation.html](http://www.sphinx-doc.org/en/master/usage/installation.html)
+While editing, rebuild without pulling and without a clean build:
 
-    pip3 install -U sphinx
+    ./update.sh --quick
 
-### 3. Install The Theme
+To serve the output with a local web server:
 
-    pip3 install sphinx_rtd_theme
+    sudo ln -s /path/to/docs/main/_live /var/www/html/docs
 
-### 4. Install Plugins
+## Adding a repository
 
-    pip3 install myst-parser sphinx_copybutton
+1. Add a line to `repos.conf`: directory name, clone url and branch.
+2. Add the directory to `.gitignore`.
+3. Link its docs into the build, e.g. `ln -s ../newrepo/docs main/newrepo`, and add it to a toctree in `main/index.rst`.
 
-### 5. Build the docs
+## Pushing changes to the doc repositories
 
-    cd main
-    make clean
-    make html
+The cloned repositories use https urls. To switch them to ssh for pushing:
 
-This will generate html output in a `build` folder. The html can then be displayed using a local web server.
-
-    sudo ln -s /home/USERNAME/docs/main/_build/html /var/www/html/docs
-
-## Update
-
-    git submodule update --recursive --remote
+    ./switch_git_urls_to_ssh.sh ssh
