@@ -235,9 +235,9 @@ The CT has a stated accuracy of ±3%. The CT burden resistor is a 1% tolerance c
 
 **Ideal Power AC-AC Adapters**
 
-Datasheet: [Ideal Power 77DB-06-09](files/77DB-06-09.pdf) (UK Plug type)
+Datasheet: [Ideal Power 77DB-06-09](https://web.archive.org/web/20150420034514/http://openenergymonitor.org/emon/sites/default/files/77DB-06-09.pdf) (UK Plug type)
 
-Datasheet: [Ideal Power 77DE-06-09](files/77DE-06-09.pdf) (EURO Plug type)
+Datasheet: [Ideal Power 77DE-06-09](https://web.archive.org/web/20150420071721/http://openenergymonitor.org/emon/sites/default/files/77DE-06-09.pdf) (EURO Plug type)
 
 Datasheet: [Ideal Power 77DA-10-09](http://files.openenergymonitor.org/77DA-10-09.pdf) (US Plug type)
 

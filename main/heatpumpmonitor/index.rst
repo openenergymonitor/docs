@@ -1,5 +1,5 @@
 HeatpumpMonitor.org Results
-===================
+===========================
 
 .. toctree::
    :maxdepth: 2

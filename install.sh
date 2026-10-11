@@ -9,5 +9,5 @@ ln -s ../emonpi/docs main/emonpi
 ln -s ../emonbase/docs main/emonbase
 ln -s ../EmonScripts/docs main/emonsd
 ln -s ../emonhub/docs main/emonhub
-ln -s ../emoncms/docs/user_guide main/emoncms
+ln -s ../emoncms/docs main/emoncms
 

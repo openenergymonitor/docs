@@ -564,7 +564,7 @@ No information is available regarding changes required for the emonTx4.
 
 ## Changes for Robin Emley’s Energy Diverter
 
-(See [Diverting surplus PV Power, by Robin Emley](/pv-diversion/mk2/index.html)) The only change necessary for the emonTx V2
+(See [Diverting surplus PV Power, by Robin Emley](../../pv-diversion/mk2/index.md)) The only change necessary for the emonTx V2
 or emonTx V3.x is to alter <code>CYCLES_PER_SECOND</code> to 60. No information is available regarding
 changes required for the emonTx4.
 

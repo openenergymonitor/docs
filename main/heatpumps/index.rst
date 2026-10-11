@@ -10,3 +10,5 @@ Learn: Heat pumps
    tools.md
    Useful equations <basics.md>
    removing_air.md
+   Case studies <guide.md>
+   terminology.md
