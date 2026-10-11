@@ -14,12 +14,12 @@ The OpenEnergyMonitor system can be used as a simple home energy monitoring syst
 
 Please follow the hardware installation guides here to get started:
 
-- [emonPi2](../emonpi2/install.md)
-- [emonTx5](../emontx5/install.md)
+- {doc}`emonPi2 </emonpi2/install>`
+- {doc}`emonTx5 </emontx5/install>`
 
 ## 2. Emoncms Feed Setup
 
-See [Emoncms > Log Local](../emoncms/intro-rpi.md) section of the setup guide.
+See {doc}`Emoncms > Log Local </emoncms/intro-rpi>` section of the setup guide.
 
 For automatic MyElectric App setup use the suggested feed names below. **The names are case sensitive.**
 

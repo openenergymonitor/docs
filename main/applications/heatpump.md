@@ -29,11 +29,11 @@ To install an emonTx, or emonPi follow the general setup guides here, clip the C
 
 - [Buy emonPi2](https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emonpi2/)
 - [Install emonPi2](https://docs.openenergymonitor.org/emonpi2/index.html)
-- [Install emonTx4](../emontx4/emontx4_emonbase_install.md)
+- {doc}`Install emonTx4 </emontx4/emontx4_emonbase_install>`
 
 It is also possible to measure the electricity consumption with modbus electricity meter e.g [SDM120](https://shop.openenergymonitor.com/sdm120-modbus-mid-45a/)
 
-- [+ Add Pulse Counting](../emontx4/other_sensors.md)
+- {doc}`+ Add Pulse Counting </emontx4/other_sensors>`
 - [Reading from a Modbus SDM120 electricity meter using emonPi/emonBase](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#reading-from-a-sdm120-single-phase-meter)
 - [Reading from electricity meters that support MBUS](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#m-bus-reader-for-electric-and-heat-meters)
 
@@ -55,8 +55,8 @@ Since the performance of a heat pump is greatly affected by the working temperat
 
 The EmonTx and EmonPi units both support temperature sensing using one-wire DS18B20 temperature sensors, see the following setup guide for examples of how to connect up temperature sensors:
 
-- [EmonTx4 heat pump monitor guide](../emontx4/heatpumpmonitor.md)
-- [EmonTx4 temperature sensing](../emontx4/other_sensors.md)
+- {doc}`EmonTx4 heat pump monitor guide </emontx4/heatpumpmonitor>`
+- {doc}`EmonTx4 temperature sensing </emontx4/other_sensors>`
 
 - [Buy emonPi2](https://shop.openenergymonitor.com/single-phase-6-channel-energy-monitoring-emonpi2/)
 - [Install emonPi2](https://docs.openenergymonitor.org/emonpi2/index.html)
@@ -74,7 +74,7 @@ The EmonTx and EmonPi units both support temperature sensing using one-wire DS18
 
 The COP of a heat pump can be measured by measuring the heat output in addition to the electrical input. This can be done by either interfacing with a heat meter using MBUS (e.g: Sharky 775, Sontex superstatic 440, Kamstrup 403 or Qalcosonic E3) or a pulse counter, or a flow meter with an analog voltage output (Grundfos or Sika Vortex Flow Meter).
 
-- A heat meter with a pulse output can be connected to either the EmonTx or the EmonPi, see:<br> [+ Add Pulse Counting](../emontx4/other_sensors.md)
+- A heat meter with a pulse output can be connected to either the EmonTx or the EmonPi, see:<br> {doc}`+ Add Pulse Counting </emontx4/other_sensors>`
 <!--- Using the analog input on a EmonTx or EmonPi to interface with an analog voltage output from a Grundfos or Sika Vortex Flow Meter-->
 - Using our [MBUS to USB](https://shop.openenergymonitor.com/m-bus-to-usb-converter/) reader that plugs into a EmonPi or EmonBase. Setup and emonhub interfacer configuration documentation is available here: [MBUS Reader for Electric and Heat meters](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#m-bus-reader-for-electric-and-heat-meters).
 - [Reading from a Modbus SDM120 electricity meter using emonPi/emonBase](https://docs.openenergymonitor.org/emonhub/emonhub-interfacers.html#reading-from-a-sdm120-single-phase-meter)

@@ -21,10 +21,6 @@
 	path = emonbase
 	url = https://github.com/openenergymonitor/emonbase
 	branch = main
-[submodule "learn"]
-	path = learn
-	url = https://github.com/openenergymonitor/learn
-	branch = master
 [submodule "emonth2"]
 	path = emonth2
 	url = https://github.com/openenergymonitor/emonth2

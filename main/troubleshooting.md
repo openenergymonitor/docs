@@ -3,7 +3,7 @@
 A good place to start with troubleshooting is the forum FAQ, followed by the Emoncms/emonPi/emonBase troubleshooting page.
 
 - [Community forums: FAQ](https://community.openenergymonitor.org/t/frequently-asked-questions/3005)
-- [Emoncms/emonPi/emonBase troubleshooting](emoncms/troubleshooting.md)
+- {doc}`Emoncms/emonPi/emonBase troubleshooting </emoncms/troubleshooting>`
 
 If you can't find what you are looking for there, try searching both the forums and the documentation here for reports of similar issues.
 
@@ -21,7 +21,7 @@ If contacting us for support please include as much infomation as possible e.g:
 
 - Shop order number
 - Hardware type and version
-- emonPi / emon Base [pre-built emonSD SD-card version](emonsd/download.md)
+- emonPi / emon Base {doc}`pre-built emonSD SD-card version </emonsd/download>`
 - Emoncms version
 - Any changes made to the default system
 - Steps required to replicate the issue
