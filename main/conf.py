@@ -18,7 +18,7 @@ extensions = ["myst_parser","sphinx_copybutton"]
 myst_enable_extensions = ["html_image"]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', '**/README.md', 'emoncms/developer']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'README.md', '**/README.md']
 # include_patterns = ['index.rst','modules/emontx4/docs/*']
 
 
