@@ -1,4 +1,8 @@
-## The importance of commissioning and optimisation<br>(getting the right control settings!)
+---
+orphan: true
+---
+
+# The importance of commissioning and optimisation<br>(getting the right control settings!)
 
 Contrasting the [Electrification of Heat](https://eoh.heatpumpmonitor.org/) data with HeatpumpMonitor.org systems, one thing that really stands out, is the large number of Vaillant systems with radiator upgrades that were still performing quite poorly. We’ve become accustomed to seeing Vaillants perform very well on HeatpumpMonitor.org and so this was quite a surprise.
 

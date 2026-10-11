@@ -1,3 +1,7 @@
+---
+orphan: true
+---
+
 # Case studies
 
 ![casestudies](img/casestudies2.png)
