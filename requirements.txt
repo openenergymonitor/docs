@@ -1,4 +1,6 @@
-Sphinx==9.1.0
-sphinx_rtd_theme==3.1.0
-myst-parser==5.1.0
-sphinx-copybutton==0.5.2
+# Not pinned: pip picks the newest versions supported by the local Python
+# (the docs server runs Python 3.8, which tops out at Sphinx 7.1)
+Sphinx
+sphinx_rtd_theme
+myst-parser
+sphinx-copybutton

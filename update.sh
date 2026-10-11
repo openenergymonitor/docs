@@ -48,17 +48,25 @@ fetch_repos() {
 }
 
 ensure_sphinx() {
-    if [ ! -x "$VENV_BIN/python" ]
+    # Recreate the venv if missing or left without pip by a failed creation
+    if ! "$VENV_BIN/python" -m pip --version >/dev/null 2>&1
     then
         echo "Creating local virtual environment at $VENV_DIR"
-        python3 -m venv "$VENV_DIR" || { echo "Failed to create venv. Install python3-venv and retry."; return 1; }
+        rm -rf "$VENV_DIR"
+        if ! python3 -m venv "$VENV_DIR"
+        then
+            rm -rf "$VENV_DIR"
+            echo "Failed to create venv. Install python3-venv and retry."
+            return 1
+        fi
+        "$VENV_BIN/python" -m pip install -U pip || return 1
     fi
 
     # Reinstall only when requirements.txt has changed since the last install
     if ! cmp -s requirements.txt "$VENV_DIR/requirements.installed"
     then
         echo "Installing Sphinx dependencies in local venv"
-        "$VENV_BIN/pip" install -r requirements.txt || return 1
+        "$VENV_BIN/python" -m pip install -U -r requirements.txt || return 1
         cp requirements.txt "$VENV_DIR/requirements.installed"
     fi
 }
