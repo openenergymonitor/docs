@@ -35,6 +35,7 @@ Welcome to the OpenEnergyMonitor guide!
    :maxdepth: 2
    :caption: Integrations
 
+   Home Assistant <integrations/home-assistant.md>
    EmonEVSE <emonevse/index>
    
 .. toctree::

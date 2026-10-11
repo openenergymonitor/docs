@@ -8,7 +8,7 @@ The docs can be built and previewed locally:
 
     git clone https://github.com/openenergymonitor/docs
     cd docs
-    git submodule update --init
+    git submodule update --init --recursive
 
 ### 2. Install Sphinx
 
@@ -22,7 +22,7 @@ See: [http://www.sphinx-doc.org/en/master/usage/installation.html](http://www.sp
 
 ### 4. Install Plugins
 
-    pip3 install m2r myst-parser sphinx_copybutton
+    pip3 install myst-parser sphinx_copybutton
 
 ### 5. Build the docs
 

@@ -25,8 +25,8 @@ Emoncms and My Solar are pre-installed on the emonBase/emonPi base-station and c
 
 Please follow the hardware installation guides here to get started:
 
-- [emonPi2](../emonpi2/install.md)
-- [emonTx4](../emontx4/emontx4_emonbase_install.md)
+- {doc}`emonPi2 </emonpi2/install>`
+- {doc}`emonTx4 </emontx4/emontx4_emonbase_install>`
 
 
 ## 2. Sensor Installation

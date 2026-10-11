@@ -4,53 +4,53 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **emonPi2**
 
-  - [Documentation](emonpi2/index.md)
+  - {doc}`Documentation </emonpi2/index>`
   - [Github repository](https://github.com/openenergymonitor/emonpi2)
   - [Hardware files](https://github.com/openenergymonitor/emonpi2/tree/main/hardware)
   - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
   
 **emonTx5**
 
-  - [Documentation](emontx5/index.md)
+  - {doc}`Documentation </emontx5/index>`
   - [Github repository](https://github.com/openenergymonitor/emontx5)
   - [Hardware files (same as emonPi2)](https://github.com/openenergymonitor/emonpi2/tree/main/hardware)
   - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
 
 **emonTx4**
 
-  - [Documentation](emontx4/index.md)
+  - {doc}`Documentation </emontx4/index>`
   - [Github repository](https://github.com/openenergymonitor/emontx4)
   - [Hardware files](https://github.com/openenergymonitor/emontx4/tree/main/hardware)
   - [Base firmware](https://github.com/openenergymonitor/avrdb_firmware)
   
 **emonVs**
 
-  - [Documentation](emontx4/voltage_sensors.md)
+  - {doc}`Documentation </emontx4/voltage_sensors>`
   - [Github repository](https://github.com/openenergymonitor/emonVoltageSense)
   - [Hardware files](https://github.com/openenergymonitor/emonVoltageSense/tree/main/v1.1)
 
 **emonPi**
 
-  - [Documentation](emonpi/index.md)
+  - {doc}`Documentation </emonpi/index>`
   - [Hardware & Firmware](https://github.com/openenergymonitor/emonpi)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonpi)
 
 **emonTx v3**
 
-  - [Documentation](emontx3/index.md)
+  - {doc}`Documentation </emontx3/index>`
   - [Hardware & Firmware](https://github.com/openenergymonitor/emontx3)
   - [Other emonTx firmware examples](https://github.com/openenergymonitor/emonTxFirmware)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emontx)
 
 **RFM69Pi**
 
-  - [Documentation](/emonbase/rfm69-pi.md)
+  - {doc}`Documentation </emonbase/rfm69-pi>`
   - [Hardware & Firmware](https://github.com/openenergymonitor/rfm2pi)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/rfm69pi)
 
 **emonESP**
 
-  - [User Guide](emontx3/esp8266.md)
+  - {doc}`User Guide </emontx3/esp8266>`
   - [Firmware](https://github.com/openenergymonitor/emonesp)
   - [Forum Category](https://community.openenergymonitor.org/c/hardware/emonesp)
 
@@ -110,10 +110,10 @@ A Definitive List of Resources for OpenEnergyMonitor Hardware, Firmware and Soft
 
 **emonSD Pre-built SD card**
 
-  - [emonSD download](emonsd/download.md)
+  - {doc}`emonSD download </emonsd/download>`
   - [Forum category](https://community.openenergymonitor.org/c/emonsd)
 
 **emonHub**
   
   - [emonHub GitHub](https://github.com/openenergymonitor/emonhub)
-  - [emonHub Documentation](emonhub/index.md)
+  - {doc}`emonHub Documentation </emonhub/index>`
